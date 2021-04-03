@@ -21,5 +21,68 @@ namespace WorkingHoursAndDays
             
         }
 
-      }
+        private void buttonLecturer_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (((Control)sender).BackColor != Color.FromArgb(28, 35, 63))
+                ((Control)sender).BackColor = Color.FromArgb(28, 35, 63);
+            else
+                ((Control)sender).BackColor = Color.FromArgb(36,45,80);
+        }
+
+        private void buttonSubject_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (((Control)sender).BackColor != Color.FromArgb(28, 35, 63))
+                ((Control)sender).BackColor = Color.FromArgb(28, 35, 63);
+            else
+                ((Control)sender).BackColor = Color.FromArgb(36, 45, 80);
+        }
+
+        private void buttonStudent_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (((Control)sender).BackColor != Color.FromArgb(28, 35, 63))
+                ((Control)sender).BackColor = Color.FromArgb(28, 35, 63);
+            else
+                ((Control)sender).BackColor = Color.FromArgb(36, 45, 80);
+        }
+
+        private void buttonLocation_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (((Control)sender).BackColor != Color.FromArgb(28, 35, 63))
+                ((Control)sender).BackColor = Color.FromArgb(28, 35, 63);
+            else
+                ((Control)sender).BackColor = Color.FromArgb(36, 45, 80);
+        }
+
+        private void buttonTags_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (((Control)sender).BackColor != Color.FromArgb(28, 35, 63))
+                ((Control)sender).BackColor = Color.FromArgb(28, 35, 63);
+            else
+                ((Control)sender).BackColor = Color.FromArgb(36, 45, 80);
+        }
+
+        private void buttonSession_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (((Control)sender).BackColor != Color.FromArgb(28, 35, 63))
+                ((Control)sender).BackColor = Color.FromArgb(28, 35, 63);
+            else
+                ((Control)sender).BackColor = Color.FromArgb(36, 45, 80);
+        }
+
+        private void buttonDaysAndHours_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (((Control)sender).BackColor != Color.FromArgb(28, 35, 63))
+                ((Control)sender).BackColor = Color.FromArgb(28, 35, 63);
+            else
+                ((Control)sender).BackColor = Color.FromArgb(36, 45, 80);
+        }
+
+        private void buttonStatistics_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (((Control)sender).BackColor != Color.FromArgb(28, 35, 63))
+                ((Control)sender).BackColor = Color.FromArgb(28, 35, 63);
+            else
+                ((Control)sender).BackColor = Color.FromArgb(36, 45, 80);
+        }
+    }
 }

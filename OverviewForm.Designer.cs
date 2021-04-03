@@ -178,6 +178,7 @@ namespace WorkingHoursAndDays
             this.buttonStatistics.Text = "Statistics";
             this.buttonStatistics.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonStatistics.UseVisualStyleBackColor = true;
+            this.buttonStatistics.MouseClick += new System.Windows.Forms.MouseEventHandler(this.buttonStatistics_MouseClick);
             // 
             // buttonDaysAndHours
             // 
@@ -193,6 +194,7 @@ namespace WorkingHoursAndDays
             this.buttonDaysAndHours.Text = "Days && Hours";
             this.buttonDaysAndHours.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonDaysAndHours.UseVisualStyleBackColor = true;
+            this.buttonDaysAndHours.MouseClick += new System.Windows.Forms.MouseEventHandler(this.buttonDaysAndHours_MouseClick);
             // 
             // buttonSession
             // 
@@ -208,6 +210,7 @@ namespace WorkingHoursAndDays
             this.buttonSession.Text = "Session";
             this.buttonSession.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonSession.UseVisualStyleBackColor = true;
+            this.buttonSession.MouseClick += new System.Windows.Forms.MouseEventHandler(this.buttonSession_MouseClick);
             // 
             // buttonTags
             // 
@@ -223,6 +226,7 @@ namespace WorkingHoursAndDays
             this.buttonTags.Text = "Tags";
             this.buttonTags.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonTags.UseVisualStyleBackColor = true;
+            this.buttonTags.MouseClick += new System.Windows.Forms.MouseEventHandler(this.buttonTags_MouseClick);
             // 
             // buttonLocation
             // 
@@ -238,6 +242,7 @@ namespace WorkingHoursAndDays
             this.buttonLocation.Text = "Location";
             this.buttonLocation.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonLocation.UseVisualStyleBackColor = true;
+            this.buttonLocation.MouseClick += new System.Windows.Forms.MouseEventHandler(this.buttonLocation_MouseClick);
             // 
             // buttonStudent
             // 
@@ -253,6 +258,7 @@ namespace WorkingHoursAndDays
             this.buttonStudent.Text = "Student";
             this.buttonStudent.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonStudent.UseVisualStyleBackColor = true;
+            this.buttonStudent.MouseClick += new System.Windows.Forms.MouseEventHandler(this.buttonStudent_MouseClick);
             // 
             // buttonSubject
             // 
@@ -268,6 +274,7 @@ namespace WorkingHoursAndDays
             this.buttonSubject.Text = "Subject";
             this.buttonSubject.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonSubject.UseVisualStyleBackColor = true;
+            this.buttonSubject.MouseClick += new System.Windows.Forms.MouseEventHandler(this.buttonSubject_MouseClick);
             // 
             // pictureBoxLecturer
             // 
@@ -293,6 +300,7 @@ namespace WorkingHoursAndDays
             this.buttonLecturer.Text = "Lecturer";
             this.buttonLecturer.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonLecturer.UseVisualStyleBackColor = true;
+            this.buttonLecturer.MouseClick += new System.Windows.Forms.MouseEventHandler(this.buttonLecturer_MouseClick);
             // 
             // panelLogo
             // 
