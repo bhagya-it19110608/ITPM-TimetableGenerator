@@ -11,17 +11,11 @@ using System.Data.SqlClient;
 
 namespace Member3
 {
-    public partial class Form1 : Form
+    public partial class FormAddWorkingDays : Form
     {
-        public Form1()
+        public FormAddWorkingDays()
         {
             InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            
-
         }
     }
 }
