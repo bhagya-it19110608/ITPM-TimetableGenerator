@@ -16,7 +16,7 @@ namespace Member3
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormAddWorkingDays());
+            Application.Run(new FormOverview());
         }
     }
 }

@@ -34,6 +34,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.SqlXml" />
     <Reference Include="System.Xml.Linq" />
@@ -47,16 +49,133 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormAddNotAvailableTimeOfLecturer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddNotAvailableTimeOfLecturer.Designer.cs">
+      <DependentUpon>FormAddNotAvailableTimeOfLecturer.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAddWorkingDays.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormAddWorkingDays.Designer.cs">
       <DependentUpon>FormAddWorkingDays.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormContentLecturer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContentLecturer.Designer.cs">
+      <DependentUpon>FormContentLecturer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContentSession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContentSession.Designer.cs">
+      <DependentUpon>FormContentSession.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContentStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContentStudent.Designer.cs">
+      <DependentUpon>FormContentStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContentWorkingDaysAndHours.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContentWorkingDaysAndHours.Designer.cs">
+      <DependentUpon>FormContentWorkingDaysAndHours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLecturerUnavailable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLecturerUnavailable.Designer.cs">
+      <DependentUpon>FormLecturerUnavailable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormManageDuration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManageDuration.Designer.cs">
+      <DependentUpon>FormManageDuration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormManageLecturerUnavailableTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManageLecturerUnavailableTime.Designer.cs">
+      <DependentUpon>FormManageLecturerUnavailableTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormManageStudentUnavailableTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManageStudentUnavailableTime.Designer.cs">
+      <DependentUpon>FormManageStudentUnavailableTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormManageWorkingDays.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManageWorkingDays.Designer.cs">
+      <DependentUpon>FormManageWorkingDays.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOverview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOverview.Designer.cs">
+      <DependentUpon>FormOverview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSessionExtend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSessionExtend.Designer.cs">
+      <DependentUpon>FormSessionExtend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStudentAddSession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStudentAddSession.Designer.cs">
+      <DependentUpon>FormStudentAddSession.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAddNotAvailableTimeOfLecturer.resx">
+      <DependentUpon>FormAddNotAvailableTimeOfLecturer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAddWorkingDays.resx">
       <DependentUpon>FormAddWorkingDays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContentLecturer.resx">
+      <DependentUpon>FormContentLecturer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContentSession.resx">
+      <DependentUpon>FormContentSession.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContentStudent.resx">
+      <DependentUpon>FormContentStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContentWorkingDaysAndHours.resx">
+      <DependentUpon>FormContentWorkingDaysAndHours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLecturerUnavailable.resx">
+      <DependentUpon>FormLecturerUnavailable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormManageDuration.resx">
+      <DependentUpon>FormManageDuration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormManageLecturerUnavailableTime.resx">
+      <DependentUpon>FormManageLecturerUnavailableTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormManageStudentUnavailableTime.resx">
+      <DependentUpon>FormManageStudentUnavailableTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormManageWorkingDays.resx">
+      <DependentUpon>FormManageWorkingDays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOverview.resx">
+      <DependentUpon>FormOverview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSessionExtend.resx">
+      <DependentUpon>FormSessionExtend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStudentAddSession.resx">
+      <DependentUpon>FormStudentAddSession.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -66,6 +185,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -79,6 +199,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\day icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\location icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stats icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tag icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tags icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh btn.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
