@@ -55,6 +55,7 @@ namespace Member3
                 ((Control)sender).BackColor = Color.FromArgb(53, 66, 119);
             else
                 ((Control)sender).BackColor = Color.FromArgb(132, 136, 152);
+            openContentUnavailableTime(new FormManageLocationUnavailableTime());
         }
 
         private void buttonManageLecturerTimeAddSession_Click(object sender, EventArgs e)

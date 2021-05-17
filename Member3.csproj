@@ -67,6 +67,12 @@
     <Compile Include="FormContentLecturer.Designer.cs">
       <DependentUpon>FormContentLecturer.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormContentLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContentLocation.Designer.cs">
+      <DependentUpon>FormContentLocation.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormContentSession.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,12 @@
     <Compile Include="FormLecturerUnavailable.Designer.cs">
       <DependentUpon>FormLecturerUnavailable.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLocationUnavailable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLocationUnavailable.Designer.cs">
+      <DependentUpon>FormLocationUnavailable.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormManageDuration.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +114,12 @@
     </Compile>
     <Compile Include="FormManageLecturerUnavailableTime.Designer.cs">
       <DependentUpon>FormManageLecturerUnavailableTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormManageLocationUnavailableTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManageLocationUnavailableTime.Designer.cs">
+      <DependentUpon>FormManageLocationUnavailableTime.cs</DependentUpon>
     </Compile>
     <Compile Include="FormManageStudentUnavailableTime.cs">
       <SubType>Form</SubType>
@@ -127,6 +145,12 @@
     <Compile Include="FormSessionExtend.Designer.cs">
       <DependentUpon>FormSessionExtend.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormSessionExtendForLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSessionExtendForLocation.Designer.cs">
+      <DependentUpon>FormSessionExtendForLocation.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormStudentAddSession.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +168,9 @@
     <EmbeddedResource Include="FormContentLecturer.resx">
       <DependentUpon>FormContentLecturer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormContentLocation.resx">
+      <DependentUpon>FormContentLocation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormContentSession.resx">
       <DependentUpon>FormContentSession.cs</DependentUpon>
     </EmbeddedResource>
@@ -156,11 +183,17 @@
     <EmbeddedResource Include="FormLecturerUnavailable.resx">
       <DependentUpon>FormLecturerUnavailable.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormLocationUnavailable.resx">
+      <DependentUpon>FormLocationUnavailable.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormManageDuration.resx">
       <DependentUpon>FormManageDuration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormManageLecturerUnavailableTime.resx">
       <DependentUpon>FormManageLecturerUnavailableTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormManageLocationUnavailableTime.resx">
+      <DependentUpon>FormManageLocationUnavailableTime.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormManageStudentUnavailableTime.resx">
       <DependentUpon>FormManageStudentUnavailableTime.cs</DependentUpon>
@@ -173,6 +206,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormSessionExtend.resx">
       <DependentUpon>FormSessionExtend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSessionExtendForLocation.resx">
+      <DependentUpon>FormSessionExtendForLocation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormStudentAddSession.resx">
       <DependentUpon>FormStudentAddSession.cs</DependentUpon>
