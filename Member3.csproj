@@ -91,6 +91,12 @@
     <Compile Include="FormContentWorkingDaysAndHours.Designer.cs">
       <DependentUpon>FormContentWorkingDaysAndHours.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLecturerNonOverlapping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLecturerNonOverlapping.Designer.cs">
+      <DependentUpon>FormLecturerNonOverlapping.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLecturerUnavailable.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -197,6 +203,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormContentWorkingDaysAndHours.resx">
       <DependentUpon>FormContentWorkingDaysAndHours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLecturerNonOverlapping.resx">
+      <DependentUpon>FormLecturerNonOverlapping.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLecturerUnavailable.resx">
       <DependentUpon>FormLecturerUnavailable.cs</DependentUpon>
