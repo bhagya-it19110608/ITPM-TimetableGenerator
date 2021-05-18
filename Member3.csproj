@@ -115,6 +115,18 @@
     <Compile Include="FormManageDuration.Designer.cs">
       <DependentUpon>FormManageDuration.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormManageLecturerNonOverlapping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManageLecturerNonOverlapping.Designer.cs">
+      <DependentUpon>FormManageLecturerNonOverlapping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormManageLecturerOverlapping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManageLecturerOverlapping.Designer.cs">
+      <DependentUpon>FormManageLecturerOverlapping.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormManageLecturerUnavailableTime.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -215,6 +227,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormManageDuration.resx">
       <DependentUpon>FormManageDuration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormManageLecturerNonOverlapping.resx">
+      <DependentUpon>FormManageLecturerNonOverlapping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormManageLecturerOverlapping.resx">
+      <DependentUpon>FormManageLecturerOverlapping.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormManageLecturerUnavailableTime.resx">
       <DependentUpon>FormManageLecturerUnavailableTime.cs</DependentUpon>
