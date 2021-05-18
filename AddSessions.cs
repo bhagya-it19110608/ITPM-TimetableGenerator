@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
@@ -45,52 +46,52 @@ namespace WorkingHoursAndDays
         }
 
 
-        
+
 
 
 
 
         public void TableLoadsessions()
         {
-            
-                SqlConnection con = new SqlConnection(myconstring);
-                string sql = "select SelectLecturer,SelectTag,SelectedLecturer,SGroupIDMain,SGroupIDSub,SSubjectCode,SSubject,NoStudents,Duration from ManageSession";
-                SqlCommand cmd = new SqlCommand(sql, con);
-                SqlDataAdapter adpter = new SqlDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                DataSet ds = new DataSet();
-                adpter.Fill(ds);
-                dt = ds.Tables[0];
 
-                //Bind the fetched data to gridview
-                dataaddmanage.DataSource = dt;
+            SqlConnection con = new SqlConnection(myconstring);
+            string sql = "select SelectLecturer,SelectTag,SelectedLecturer,SGroupIDMain,SGroupIDSub,SSubjectCode,SSubject,NoStudents,Duration from ManageSession";
+            SqlCommand cmd = new SqlCommand(sql, con);
+            SqlDataAdapter adpter = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            DataSet ds = new DataSet();
+            adpter.Fill(ds);
+            dt = ds.Tables[0];
+
+            //Bind the fetched data to gridview
+            dataaddmanage.DataSource = dt;
 
 
 
-                DataGridViewButtonColumn editbutton = new DataGridViewButtonColumn();
+            DataGridViewButtonColumn editbutton = new DataGridViewButtonColumn();
+            {
+
+                editbutton.FlatStyle = FlatStyle.Popup;
+
+                editbutton.HeaderText = "Action";
+                editbutton.Name = "Edit";
+                editbutton.UseColumnTextForButtonValue = true;
+
+
+                editbutton.Text = "Edit";
+
+                editbutton.Width = 60;
+
+                if (dataaddmanage.Columns.Contains(editbutton.Name = "Edit"))
                 {
 
-                    editbutton.FlatStyle = FlatStyle.Popup;
-
-                    editbutton.HeaderText = "Action";
-                    editbutton.Name = "Edit";
-                    editbutton.UseColumnTextForButtonValue = true;
-
-
-                    editbutton.Text = "Edit";
-
-                    editbutton.Width = 60;
-
-                    if (dataaddmanage.Columns.Contains(editbutton.Name = "Edit"))
-                    {
-
-                    }
-                    else
-                    {
-                        dataaddmanage.Columns.Add(editbutton);
-                    }
                 }
-            
+                else
+                {
+                    dataaddmanage.Columns.Add(editbutton);
+                }
+            }
+
             DataGridViewButtonColumn deletebutton = new DataGridViewButtonColumn();
             {
 
@@ -121,7 +122,7 @@ namespace WorkingHoursAndDays
             comboBoxsl1.SelectedIndex = -1;
             comboBoxstag.SelectedIndex = -1;
             textBoxselectlect.Text = "";
-            
+
         }
 
         public void ClearStep2()
@@ -132,7 +133,7 @@ namespace WorkingHoursAndDays
             cbaddssub.SelectedIndex = -1;
             nupnos.Text = "";
             tbadddu.Text = "";
-           
+
         }
 
         public void Update()
@@ -172,29 +173,26 @@ namespace WorkingHoursAndDays
             nupdayenos.Text = "";
             texupdated.Text = "";
         }
-
-
-       /* private void search()
+        public void Clearsearch()
         {
-            SqlConnection con = new SqlConnection(myconstring);
-            //string sqlquery = "SELECT * FROM ManageSession WHERE SelectedLecturer = '" + textmanages.Text + "'";
+            searchdrop.SelectedIndex = -1;
+        }
 
+            /* private void search()
+             {
+                 SqlConnection con = new SqlConnection(myconstring);
+                 //string sqlquery = "SELECT * FROM ManageSession WHERE SelectedLecturer = '" + textmanages.Text + "'";
+                 con.Open();
+                 SqlCommand cmd = new SqlCommand("SELECT * FROM ManageSession WHERE SelectedLecturer = '" + textmanages.Text + "'",con);
+                 SqlDataAdapter sdr = new SqlDataAdapter(cmd);
+                 // SqlDataReader sdr = cmd.ExecuteReader();
+                 DataTable dt = new DataTable();
+                 sdr.Fill(dt);
+                 dataaddmanage.DataSource = dt;
+                 con.Close();
+             }*/
 
-
-
-            con.Open();
-            SqlCommand cmd = new SqlCommand("SELECT * FROM ManageSession WHERE SelectedLecturer = '" + textmanages.Text + "'",con);
-
-            SqlDataAdapter sdr = new SqlDataAdapter(cmd);
-            // SqlDataReader sdr = cmd.ExecuteReader();
-            DataTable dt = new DataTable();
-            sdr.Fill(dt);
-            dataaddmanage.DataSource = dt;
-            con.Close();
-
-        }*/
-
-        private void tabPage1_Click(object sender, EventArgs e)
+            private void tabPage1_Click(object sender, EventArgs e)
         {
 
         }
@@ -256,15 +254,15 @@ namespace WorkingHoursAndDays
         {
             if (e.ColumnIndex == 0)
             {
-                cupdatesl1.Text = dataaddmanage.Rows[e.RowIndex].Cells[3].Value.ToString();
-                cupdatetag.Text = dataaddmanage.Rows[e.RowIndex].Cells[4].Value.ToString();
-                textupdatesl2.Text = dataaddmanage.Rows[e.RowIndex].Cells[5].Value.ToString();
-                cupdatemain.Text = dataaddmanage.Rows[e.RowIndex].Cells[6].Value.ToString();
-                cupdatesub.Text = dataaddmanage.Rows[e.RowIndex].Cells[7].Value.ToString();
-                cupdatescode.Text = dataaddmanage.Rows[e.RowIndex].Cells[8].Value.ToString();
-                cupdatesubject.Text = dataaddmanage.Rows[e.RowIndex].Cells[9].Value.ToString();
-                nupdayenos.Text = dataaddmanage.Rows[e.RowIndex].Cells[10].Value.ToString();
-                texupdated.Text = dataaddmanage.Rows[e.RowIndex].Cells[11].Value.ToString();
+                cupdatesl1.Text = dataaddmanage.Rows[e.RowIndex].Cells[2].Value.ToString();
+                cupdatetag.Text = dataaddmanage.Rows[e.RowIndex].Cells[3].Value.ToString();
+                textupdatesl2.Text = dataaddmanage.Rows[e.RowIndex].Cells[4].Value.ToString();
+                cupdatemain.Text = dataaddmanage.Rows[e.RowIndex].Cells[5].Value.ToString();
+                cupdatesub.Text = dataaddmanage.Rows[e.RowIndex].Cells[6].Value.ToString();
+                cupdatescode.Text = dataaddmanage.Rows[e.RowIndex].Cells[7].Value.ToString();
+                cupdatesubject.Text = dataaddmanage.Rows[e.RowIndex].Cells[8].Value.ToString();
+                nupdayenos.Text = dataaddmanage.Rows[e.RowIndex].Cells[9].Value.ToString();
+                texupdated.Text = dataaddmanage.Rows[e.RowIndex].Cells[10].Value.ToString();
 
             }
             else if (e.ColumnIndex == 1)
@@ -290,7 +288,7 @@ namespace WorkingHoursAndDays
             }
             else
             {
-                MessageBox.Show("Please check the Fileds !");
+                MessageBox.Show("Please chick the edit button to your changes !");
             }
         }
 
@@ -332,6 +330,12 @@ namespace WorkingHoursAndDays
         private void textmanages_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void brefresh_Click(object sender, EventArgs e)
+        {
+            Clearsearch();
+            TableLoadsessions();
         }
     }
 }

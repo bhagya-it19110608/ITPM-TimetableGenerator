@@ -95,6 +95,7 @@ namespace WorkingHoursAndDays
             this.lupdatetag = new System.Windows.Forms.Label();
             this.cupdatesl1 = new System.Windows.Forms.ComboBox();
             this.lupdatesl1 = new System.Windows.Forms.Label();
+            this.brefresh = new System.Windows.Forms.Button();
             this.addtab.SuspendLayout();
             this.tabaddsession.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -567,6 +568,7 @@ namespace WorkingHoursAndDays
             // 
             // tpmsession
             // 
+            this.tpmsession.Controls.Add(this.brefresh);
             this.tpmsession.Controls.Add(this.searchdrop);
             this.tpmsession.Controls.Add(this.btnview);
             this.tpmsession.Controls.Add(this.btnaddsession);
@@ -636,7 +638,7 @@ namespace WorkingHoursAndDays
             // 
             this.bsearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(66)))), ((int)(((byte)(119)))));
             this.bsearch.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.bsearch.Location = new System.Drawing.Point(541, 46);
+            this.bsearch.Location = new System.Drawing.Point(501, 46);
             this.bsearch.Name = "bsearch";
             this.bsearch.Size = new System.Drawing.Size(139, 34);
             this.bsearch.TabIndex = 37;
@@ -937,6 +939,18 @@ namespace WorkingHoursAndDays
             this.lupdatesl1.TabIndex = 7;
             this.lupdatesl1.Text = "Select Lecturer(s)";
             // 
+            // brefresh
+            // 
+            this.brefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(66)))), ((int)(((byte)(119)))));
+            this.brefresh.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.brefresh.Location = new System.Drawing.Point(656, 46);
+            this.brefresh.Name = "brefresh";
+            this.brefresh.Size = new System.Drawing.Size(139, 34);
+            this.brefresh.TabIndex = 74;
+            this.brefresh.Text = "Refresh";
+            this.brefresh.UseVisualStyleBackColor = false;
+            this.brefresh.Click += new System.EventHandler(this.brefresh_Click);
+            // 
             // AddSessions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -1036,5 +1050,6 @@ namespace WorkingHoursAndDays
         private System.Windows.Forms.Label lupdatenos;
         private System.Windows.Forms.Button btnuupdate;
         private System.Windows.Forms.ComboBox searchdrop;
+        private System.Windows.Forms.Button brefresh;
     }
 }
