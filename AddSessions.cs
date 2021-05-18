@@ -174,7 +174,7 @@ namespace WorkingHoursAndDays
         }
 
 
-        private void search()
+       /* private void search()
         {
             SqlConnection con = new SqlConnection(myconstring);
             //string sqlquery = "SELECT * FROM ManageSession WHERE SelectedLecturer = '" + textmanages.Text + "'";
@@ -192,7 +192,7 @@ namespace WorkingHoursAndDays
             dataaddmanage.DataSource = dt;
             con.Close();
 
-        }
+        }*/
 
         private void tabPage1_Click(object sender, EventArgs e)
         {
@@ -256,15 +256,15 @@ namespace WorkingHoursAndDays
         {
             if (e.ColumnIndex == 0)
             {
-                cupdatesl1.Text = dataaddmanage.Rows[e.RowIndex].Cells[2].Value.ToString();
-                cupdatetag.Text = dataaddmanage.Rows[e.RowIndex].Cells[3].Value.ToString();
-                textupdatesl2.Text = dataaddmanage.Rows[e.RowIndex].Cells[4].Value.ToString();
-                cupdatemain.Text = dataaddmanage.Rows[e.RowIndex].Cells[5].Value.ToString();
-                cupdatesub.Text = dataaddmanage.Rows[e.RowIndex].Cells[6].Value.ToString();
-                cupdatescode.Text = dataaddmanage.Rows[e.RowIndex].Cells[7].Value.ToString();
-                cupdatesubject.Text = dataaddmanage.Rows[e.RowIndex].Cells[8].Value.ToString();
-                nupdayenos.Text = dataaddmanage.Rows[e.RowIndex].Cells[9].Value.ToString();
-                texupdated.Text = dataaddmanage.Rows[e.RowIndex].Cells[10].Value.ToString();
+                cupdatesl1.Text = dataaddmanage.Rows[e.RowIndex].Cells[3].Value.ToString();
+                cupdatetag.Text = dataaddmanage.Rows[e.RowIndex].Cells[4].Value.ToString();
+                textupdatesl2.Text = dataaddmanage.Rows[e.RowIndex].Cells[5].Value.ToString();
+                cupdatemain.Text = dataaddmanage.Rows[e.RowIndex].Cells[6].Value.ToString();
+                cupdatesub.Text = dataaddmanage.Rows[e.RowIndex].Cells[7].Value.ToString();
+                cupdatescode.Text = dataaddmanage.Rows[e.RowIndex].Cells[8].Value.ToString();
+                cupdatesubject.Text = dataaddmanage.Rows[e.RowIndex].Cells[9].Value.ToString();
+                nupdayenos.Text = dataaddmanage.Rows[e.RowIndex].Cells[10].Value.ToString();
+                texupdated.Text = dataaddmanage.Rows[e.RowIndex].Cells[11].Value.ToString();
 
             }
             else if (e.ColumnIndex == 1)
@@ -316,7 +316,22 @@ namespace WorkingHoursAndDays
 
         private void bsearch_Click(object sender, EventArgs e)
         {
-            search();
+            SqlConnection con = new SqlConnection(myconstring);
+            string sql = "select * from ManageSession where SelectLecturer   = '" + searchdrop.Text + "'";
+            SqlCommand cmd = new SqlCommand(sql, con);
+            SqlDataAdapter adpter = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            DataSet ds = new DataSet();
+            adpter.Fill(ds);
+            dt = ds.Tables[0];
+
+            //Bind the fetched data to gridview
+            dataaddmanage.DataSource = dt;
+        }
+
+        private void textmanages_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

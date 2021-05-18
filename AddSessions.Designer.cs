@@ -67,11 +67,11 @@ namespace WorkingHoursAndDays
             this.tabmanage = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tpmsession = new System.Windows.Forms.TabPage();
+            this.searchdrop = new System.Windows.Forms.ComboBox();
             this.btnview = new System.Windows.Forms.Button();
             this.btnaddsession = new System.Windows.Forms.Button();
             this.dataaddmanage = new System.Windows.Forms.DataGridView();
             this.bsearch = new System.Windows.Forms.Button();
-            this.textmanages = new System.Windows.Forms.TextBox();
             this.tpupdates = new System.Windows.Forms.TabPage();
             this.btnuupdate = new System.Windows.Forms.Button();
             this.btnupdateclear = new System.Windows.Forms.Button();
@@ -567,11 +567,11 @@ namespace WorkingHoursAndDays
             // 
             // tpmsession
             // 
+            this.tpmsession.Controls.Add(this.searchdrop);
             this.tpmsession.Controls.Add(this.btnview);
             this.tpmsession.Controls.Add(this.btnaddsession);
             this.tpmsession.Controls.Add(this.dataaddmanage);
             this.tpmsession.Controls.Add(this.bsearch);
-            this.tpmsession.Controls.Add(this.textmanages);
             this.tpmsession.Location = new System.Drawing.Point(4, 29);
             this.tpmsession.Name = "tpmsession";
             this.tpmsession.Padding = new System.Windows.Forms.Padding(3);
@@ -580,6 +580,22 @@ namespace WorkingHoursAndDays
             this.tpmsession.Text = "Manage Session";
             this.tpmsession.UseVisualStyleBackColor = true;
             this.tpmsession.Click += new System.EventHandler(this.tpmsession_Click);
+            // 
+            // searchdrop
+            // 
+            this.searchdrop.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.searchdrop.FormattingEnabled = true;
+            this.searchdrop.Items.AddRange(new object[] {
+            "Mr.Pitigala",
+            "Dr.Anuradha",
+            "Mr.Kodagoda",
+            "Miss.Weerasinghe",
+            "Prof.Perera",
+            "Dr.Ramanadan"});
+            this.searchdrop.Location = new System.Drawing.Point(160, 50);
+            this.searchdrop.Name = "searchdrop";
+            this.searchdrop.Size = new System.Drawing.Size(321, 28);
+            this.searchdrop.TabIndex = 73;
             // 
             // btnview
             // 
@@ -608,7 +624,7 @@ namespace WorkingHoursAndDays
             // dataaddmanage
             // 
             this.dataaddmanage.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataaddmanage.Location = new System.Drawing.Point(47, 157);
+            this.dataaddmanage.Location = new System.Drawing.Point(52, 149);
             this.dataaddmanage.Name = "dataaddmanage";
             this.dataaddmanage.RowHeadersWidth = 51;
             this.dataaddmanage.RowTemplate.Height = 29;
@@ -627,14 +643,6 @@ namespace WorkingHoursAndDays
             this.bsearch.Text = "SEARCH";
             this.bsearch.UseVisualStyleBackColor = false;
             this.bsearch.Click += new System.EventHandler(this.bsearch_Click);
-            // 
-            // textmanages
-            // 
-            this.textmanages.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
-            this.textmanages.Location = new System.Drawing.Point(123, 50);
-            this.textmanages.Name = "textmanages";
-            this.textmanages.Size = new System.Drawing.Size(371, 27);
-            this.textmanages.TabIndex = 25;
             // 
             // tpupdates
             // 
@@ -951,7 +959,6 @@ namespace WorkingHoursAndDays
             this.tabmanage.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
             this.tpmsession.ResumeLayout(false);
-            this.tpmsession.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataaddmanage)).EndInit();
             this.tpupdates.ResumeLayout(false);
             this.tpupdates.PerformLayout();
@@ -1001,7 +1008,6 @@ namespace WorkingHoursAndDays
         private System.Windows.Forms.TabControl tabControl2;
         private System.Windows.Forms.TabPage tpmsession;
         private System.Windows.Forms.TabPage tpupdates;
-        private System.Windows.Forms.TextBox textmanages;
         private System.Windows.Forms.Button bsearch;
         private System.Windows.Forms.Button btnview;
         private System.Windows.Forms.Button btnaddsession;
@@ -1029,5 +1035,6 @@ namespace WorkingHoursAndDays
         private System.Windows.Forms.TextBox texupdated;
         private System.Windows.Forms.Label lupdatenos;
         private System.Windows.Forms.Button btnuupdate;
+        private System.Windows.Forms.ComboBox searchdrop;
     }
 }
