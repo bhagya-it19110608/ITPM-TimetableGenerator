@@ -59,6 +59,7 @@ namespace Member3
                 ((Control)sender).BackColor = Color.FromArgb(28, 35, 63);
             else
                 ((Control)sender).BackColor = Color.FromArgb(36, 45, 80);
+            openContentForm(new FormTagContent());
         }
 
         private void buttonSession_Click(object sender, EventArgs e)
