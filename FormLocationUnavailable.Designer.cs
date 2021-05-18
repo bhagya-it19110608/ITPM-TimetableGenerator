@@ -54,6 +54,7 @@ namespace Member3
             this.buttonLocationTimeAdd.TabIndex = 36;
             this.buttonLocationTimeAdd.Text = "Add";
             this.buttonLocationTimeAdd.UseVisualStyleBackColor = false;
+            this.buttonLocationTimeAdd.Click += new System.EventHandler(this.buttonLocationTimeAdd_Click);
             // 
             // buttonLocationTimeClear
             // 
@@ -67,11 +68,16 @@ namespace Member3
             this.buttonLocationTimeClear.TabIndex = 35;
             this.buttonLocationTimeClear.Text = "Clear";
             this.buttonLocationTimeClear.UseVisualStyleBackColor = false;
+            this.buttonLocationTimeClear.Click += new System.EventHandler(this.buttonLocationTimeClear_Click);
             // 
             // comboBoxLocationSelectRoom
             // 
             this.comboBoxLocationSelectRoom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
             this.comboBoxLocationSelectRoom.FormattingEnabled = true;
+            this.comboBoxLocationSelectRoom.Items.AddRange(new object[] {
+            "Room1",
+            "Room2",
+            "Room3"});
             this.comboBoxLocationSelectRoom.Location = new System.Drawing.Point(268, 38);
             this.comboBoxLocationSelectRoom.Name = "comboBoxLocationSelectRoom";
             this.comboBoxLocationSelectRoom.Size = new System.Drawing.Size(167, 24);
@@ -91,6 +97,10 @@ namespace Member3
             // 
             this.comboBoxLocationStartTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
             this.comboBoxLocationStartTime.FormattingEnabled = true;
+            this.comboBoxLocationStartTime.Items.AddRange(new object[] {
+            "Time1",
+            "Time2",
+            "Time3"});
             this.comboBoxLocationStartTime.Location = new System.Drawing.Point(671, 41);
             this.comboBoxLocationStartTime.Name = "comboBoxLocationStartTime";
             this.comboBoxLocationStartTime.Size = new System.Drawing.Size(167, 24);
@@ -110,6 +120,10 @@ namespace Member3
             // 
             this.comboBoxLocationEndTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
             this.comboBoxLocationEndTime.FormattingEnabled = true;
+            this.comboBoxLocationEndTime.Items.AddRange(new object[] {
+            "Time1",
+            "Time2",
+            "Time3"});
             this.comboBoxLocationEndTime.Location = new System.Drawing.Point(672, 139);
             this.comboBoxLocationEndTime.Name = "comboBoxLocationEndTime";
             this.comboBoxLocationEndTime.Size = new System.Drawing.Size(167, 24);
@@ -129,6 +143,10 @@ namespace Member3
             // 
             this.comboBoxLocationSelectedDay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
             this.comboBoxLocationSelectedDay.FormattingEnabled = true;
+            this.comboBoxLocationSelectedDay.Items.AddRange(new object[] {
+            "Day1",
+            "Day2",
+            "Day3"});
             this.comboBoxLocationSelectedDay.Location = new System.Drawing.Point(269, 136);
             this.comboBoxLocationSelectedDay.Name = "comboBoxLocationSelectedDay";
             this.comboBoxLocationSelectedDay.Size = new System.Drawing.Size(167, 24);

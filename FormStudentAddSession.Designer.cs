@@ -69,6 +69,7 @@ namespace Member3
             this.buttonStudentTimeSubmit.TabIndex = 36;
             this.buttonStudentTimeSubmit.Text = "Submit";
             this.buttonStudentTimeSubmit.UseVisualStyleBackColor = false;
+            this.buttonStudentTimeSubmit.Click += new System.EventHandler(this.buttonStudentTimeSubmit_Click);
             // 
             // buttonStudentTimeClear
             // 
@@ -82,11 +83,16 @@ namespace Member3
             this.buttonStudentTimeClear.TabIndex = 35;
             this.buttonStudentTimeClear.Text = "Clear";
             this.buttonStudentTimeClear.UseVisualStyleBackColor = false;
+            this.buttonStudentTimeClear.Click += new System.EventHandler(this.buttonStudentTimeClear_Click);
             // 
             // comboBoxStudentSelectTime
             // 
             this.comboBoxStudentSelectTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
             this.comboBoxStudentSelectTime.FormattingEnabled = true;
+            this.comboBoxStudentSelectTime.Items.AddRange(new object[] {
+            "Time1",
+            "Time2",
+            "Time3"});
             this.comboBoxStudentSelectTime.Location = new System.Drawing.Point(510, 327);
             this.comboBoxStudentSelectTime.Name = "comboBoxStudentSelectTime";
             this.comboBoxStudentSelectTime.Size = new System.Drawing.Size(237, 24);
@@ -96,6 +102,10 @@ namespace Member3
             // 
             this.comboBoxStudentSelectSessionID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
             this.comboBoxStudentSelectSessionID.FormattingEnabled = true;
+            this.comboBoxStudentSelectSessionID.Items.AddRange(new object[] {
+            "Session1",
+            "Session2",
+            "Session3"});
             this.comboBoxStudentSelectSessionID.Location = new System.Drawing.Point(510, 274);
             this.comboBoxStudentSelectSessionID.Name = "comboBoxStudentSelectSessionID";
             this.comboBoxStudentSelectSessionID.Size = new System.Drawing.Size(237, 24);
@@ -105,6 +115,10 @@ namespace Member3
             // 
             this.comboBoxStudentSelectSubGroup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
             this.comboBoxStudentSelectSubGroup.FormattingEnabled = true;
+            this.comboBoxStudentSelectSubGroup.Items.AddRange(new object[] {
+            "SubGroup1",
+            "SubGroup2",
+            "SubGroup3"});
             this.comboBoxStudentSelectSubGroup.Location = new System.Drawing.Point(510, 221);
             this.comboBoxStudentSelectSubGroup.Name = "comboBoxStudentSelectSubGroup";
             this.comboBoxStudentSelectSubGroup.Size = new System.Drawing.Size(237, 24);
@@ -114,6 +128,10 @@ namespace Member3
             // 
             this.comboBoxStudentSelectGroup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
             this.comboBoxStudentSelectGroup.FormattingEnabled = true;
+            this.comboBoxStudentSelectGroup.Items.AddRange(new object[] {
+            "Group1",
+            "Group2",
+            "Group3"});
             this.comboBoxStudentSelectGroup.Location = new System.Drawing.Point(510, 168);
             this.comboBoxStudentSelectGroup.Name = "comboBoxStudentSelectGroup";
             this.comboBoxStudentSelectGroup.Size = new System.Drawing.Size(237, 24);

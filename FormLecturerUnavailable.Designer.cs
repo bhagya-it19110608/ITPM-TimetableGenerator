@@ -99,6 +99,10 @@ namespace Member3
             // 
             this.comboBoxLecturerSelectLecturer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
             this.comboBoxLecturerSelectLecturer.FormattingEnabled = true;
+            this.comboBoxLecturerSelectLecturer.Items.AddRange(new object[] {
+            "Lec1",
+            "Lec2",
+            "Lec3"});
             this.comboBoxLecturerSelectLecturer.Location = new System.Drawing.Point(512, 83);
             this.comboBoxLecturerSelectLecturer.Name = "comboBoxLecturerSelectLecturer";
             this.comboBoxLecturerSelectLecturer.Size = new System.Drawing.Size(237, 24);
@@ -108,6 +112,10 @@ namespace Member3
             // 
             this.comboBoxLecturerSelectGroup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
             this.comboBoxLecturerSelectGroup.FormattingEnabled = true;
+            this.comboBoxLecturerSelectGroup.Items.AddRange(new object[] {
+            "Group1",
+            "Group2",
+            "Group3"});
             this.comboBoxLecturerSelectGroup.Location = new System.Drawing.Point(512, 136);
             this.comboBoxLecturerSelectGroup.Name = "comboBoxLecturerSelectGroup";
             this.comboBoxLecturerSelectGroup.Size = new System.Drawing.Size(237, 24);
@@ -117,6 +125,10 @@ namespace Member3
             // 
             this.comboBoxLecturerSelectSubGroup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
             this.comboBoxLecturerSelectSubGroup.FormattingEnabled = true;
+            this.comboBoxLecturerSelectSubGroup.Items.AddRange(new object[] {
+            "SubG1",
+            "SubG2",
+            "SubG3"});
             this.comboBoxLecturerSelectSubGroup.Location = new System.Drawing.Point(512, 189);
             this.comboBoxLecturerSelectSubGroup.Name = "comboBoxLecturerSelectSubGroup";
             this.comboBoxLecturerSelectSubGroup.Size = new System.Drawing.Size(237, 24);
@@ -126,6 +138,10 @@ namespace Member3
             // 
             this.comboBoxLecturerSelectSessionID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
             this.comboBoxLecturerSelectSessionID.FormattingEnabled = true;
+            this.comboBoxLecturerSelectSessionID.Items.AddRange(new object[] {
+            "Session1",
+            "Session2",
+            "Session3"});
             this.comboBoxLecturerSelectSessionID.Location = new System.Drawing.Point(512, 242);
             this.comboBoxLecturerSelectSessionID.Name = "comboBoxLecturerSelectSessionID";
             this.comboBoxLecturerSelectSessionID.Size = new System.Drawing.Size(237, 24);
@@ -135,6 +151,10 @@ namespace Member3
             // 
             this.comboBoxLecturerSelectTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
             this.comboBoxLecturerSelectTime.FormattingEnabled = true;
+            this.comboBoxLecturerSelectTime.Items.AddRange(new object[] {
+            "Time1",
+            "Time2",
+            "Time3"});
             this.comboBoxLecturerSelectTime.Location = new System.Drawing.Point(512, 295);
             this.comboBoxLecturerSelectTime.Name = "comboBoxLecturerSelectTime";
             this.comboBoxLecturerSelectTime.Size = new System.Drawing.Size(237, 24);
@@ -152,6 +172,7 @@ namespace Member3
             this.buttonLecturerTimeClear.TabIndex = 21;
             this.buttonLecturerTimeClear.Text = "Clear";
             this.buttonLecturerTimeClear.UseVisualStyleBackColor = false;
+            this.buttonLecturerTimeClear.Click += new System.EventHandler(this.buttonLecturerTimeClear_Click);
             // 
             // buttonLecturerTimeSubmit
             // 
@@ -165,6 +186,7 @@ namespace Member3
             this.buttonLecturerTimeSubmit.TabIndex = 23;
             this.buttonLecturerTimeSubmit.Text = "Submit";
             this.buttonLecturerTimeSubmit.UseVisualStyleBackColor = false;
+            this.buttonLecturerTimeSubmit.Click += new System.EventHandler(this.buttonLecturerTimeSubmit_Click);
             // 
             // buttonLecturerTimeView
             // 
