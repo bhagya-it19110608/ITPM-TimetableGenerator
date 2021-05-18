@@ -121,6 +121,12 @@
     <Compile Include="FormManageLocationUnavailableTime.Designer.cs">
       <DependentUpon>FormManageLocationUnavailableTime.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormManageStudentGroups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManageStudentGroups.Designer.cs">
+      <DependentUpon>FormManageStudentGroups.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormManageStudentUnavailableTime.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -194,6 +200,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormManageLocationUnavailableTime.resx">
       <DependentUpon>FormManageLocationUnavailableTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormManageStudentGroups.resx">
+      <DependentUpon>FormManageStudentGroups.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormManageStudentUnavailableTime.resx">
       <DependentUpon>FormManageStudentUnavailableTime.cs</DependentUpon>
