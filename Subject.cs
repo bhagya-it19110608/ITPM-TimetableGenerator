@@ -503,5 +503,11 @@ private void subjectdataGridView1_CellContentClick(object sender, DataGridViewCe
         {
             ManageClear();
         }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            AddSessions f2 = new AddSessions();
+            f2.ShowDialog();
+        }
     }
 }

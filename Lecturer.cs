@@ -286,6 +286,8 @@ namespace WorkingHoursAndDays
 
             }
             TableLoad();
+            EditTableHousLoad();
+
         }
 
         private void Delete()
@@ -303,10 +305,29 @@ namespace WorkingHoursAndDays
             }
             else
             {
-                MessageBox.Show("Please check the Employee ID !");
+                MessageBox.Show("Please click the edit button before delete !");
             }
         }
 
+
+        private void DeleteHours()
+        {
+            SqlConnection con = new SqlConnection(myconstring);
+            string sql = " delete from AddHours WHERE SelectDay = '" + cmlday.Text + "'";
+            con.Open();
+            SqlCommand cmd = new SqlCommand(sql, con);
+            int rows = cmd.ExecuteNonQuery();
+            if (rows > 0)
+            {
+                MessageBox.Show("Deleted");
+                con.Close();
+                TableLoad();
+            }
+            else
+            {
+                MessageBox.Show("Please click the edit button !");
+            }
+        }
         private void bmlclear_Click(object sender, EventArgs e)
         {
             ClearGrid();
@@ -397,7 +418,48 @@ namespace WorkingHoursAndDays
             //Bind the fetched data to gridview
             dataGridView2.DataSource = dt;
 
-        }
+            DataGridViewButtonColumn editbutton = new DataGridViewButtonColumn();
+
+            editbutton.FlatStyle = FlatStyle.Popup;
+
+            editbutton.HeaderText = "Edit";
+            editbutton.Name = "Edit";
+            editbutton.UseColumnTextForButtonValue = true;
+            editbutton.Text = "Edit";
+
+            editbutton.Width = 60;
+
+            if (dataGridView2.Columns.Contains(editbutton.Name = "Edit"))
+            {
+
+            }
+            else
+            {
+                dataGridView2.Columns.Add(editbutton);
+            }
+            DataGridViewButtonColumn deletebutton = new DataGridViewButtonColumn();
+
+            deletebutton.FlatStyle = FlatStyle.Popup;
+
+            deletebutton.HeaderText = "Delete";
+            deletebutton.Name = "Delete";
+            deletebutton.UseColumnTextForButtonValue = true;
+            deletebutton.Text = "Delete";
+
+            deletebutton.Width = 60;
+
+            if (dataGridView2.Columns.Contains(deletebutton.Name = "Delete"))
+            {
+
+            }
+            else
+            {
+                dataGridView2.Columns.Add(deletebutton);
+            }
+        
+
+    }
+        
 
 
 
@@ -424,15 +486,32 @@ namespace WorkingHoursAndDays
         {
             ManageGeneraterank();
         }
+        
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.ColumnIndex == 0)
+            {
+
+                cmlday.Text = dataGridView2.Rows[e.RowIndex].Cells[2].Value.ToString();
+                cmlfrom.Text = dataGridView2.Rows[e.RowIndex].Cells[3].Value.ToString();
+                cmlto.Text = dataGridView2.Rows[e.RowIndex].Cells[4].Value.ToString();
+                
+
+            }
+            else if (e.ColumnIndex == 1)
+            {
+
+                DeleteHours();
+
+            }
             EditTableHousLoad();
         }
 
         private void bmledithours_Click(object sender, EventArgs e)
         {
             EditHours();
+           
         }
         private Form activeForm = null;
         
