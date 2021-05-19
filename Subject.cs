@@ -403,7 +403,7 @@ else if (e.ColumnIndex == 1)
             }
             else
             {
-                MessageBox.Show("Please check the Subject Code !");
+                MessageBox.Show("Please click the edit button before delete !");
             }
         }
 
