@@ -89,6 +89,7 @@ namespace Member3
                 ((Control)sender).BackColor = Color.FromArgb(28, 35, 63);
             else
                 ((Control)sender).BackColor = Color.FromArgb(36, 45, 80);
+            openContentForm(new FormContentStatic());
         }
         private Form activeForm = null;
 
