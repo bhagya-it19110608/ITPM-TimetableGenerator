@@ -333,6 +333,11 @@ namespace Member3
                 ((Control)sender).BackColor = Color.FromArgb(143, 147, 164);
             openContentLecturer(new FormManageLecturer());
         }
+
+        private void buttonAddLecturer_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

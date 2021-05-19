@@ -72,7 +72,7 @@ namespace Member3
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button9.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button9.Location = new System.Drawing.Point(800, 361);
+            this.button9.Location = new System.Drawing.Point(800, 329);
             this.button9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(120, 25);
@@ -86,7 +86,7 @@ namespace Member3
             // 
             this.bmledithours.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(66)))), ((int)(((byte)(119)))));
             this.bmledithours.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.bmledithours.Location = new System.Drawing.Point(748, 524);
+            this.bmledithours.Location = new System.Drawing.Point(748, 492);
             this.bmledithours.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bmledithours.Name = "bmledithours";
             this.bmledithours.Size = new System.Drawing.Size(139, 32);
@@ -100,12 +100,12 @@ namespace Member3
             this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dataGridView2.Location = new System.Drawing.Point(85, 444);
+            this.dataGridView2.Location = new System.Drawing.Point(85, 412);
             this.dataGridView2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 29;
-            this.dataGridView2.Size = new System.Drawing.Size(429, 94);
+            this.dataGridView2.Size = new System.Drawing.Size(461, 149);
             this.dataGridView2.TabIndex = 95;
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
@@ -118,7 +118,7 @@ namespace Member3
             "1.00 p.m",
             "5.00 p.m ",
             "8.00 p.m"});
-            this.cmlto.Location = new System.Drawing.Point(715, 497);
+            this.cmlto.Location = new System.Drawing.Point(715, 465);
             this.cmlto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmlto.Name = "cmlto";
             this.cmlto.Size = new System.Drawing.Size(187, 24);
@@ -133,7 +133,7 @@ namespace Member3
             "8.00 a.m",
             "1.00 p.m",
             "5.00 p.m"});
-            this.cmlfrom.Location = new System.Drawing.Point(715, 462);
+            this.cmlfrom.Location = new System.Drawing.Point(715, 430);
             this.cmlfrom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmlfrom.Name = "cmlfrom";
             this.cmlfrom.Size = new System.Drawing.Size(187, 24);
@@ -152,7 +152,7 @@ namespace Member3
             "Friday",
             "Saturday",
             "Sunday"});
-            this.cmlday.Location = new System.Drawing.Point(715, 427);
+            this.cmlday.Location = new System.Drawing.Point(715, 395);
             this.cmlday.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmlday.Name = "cmlday";
             this.cmlday.Size = new System.Drawing.Size(187, 24);
@@ -162,7 +162,7 @@ namespace Member3
             // 
             this.lmlday.AutoSize = true;
             this.lmlday.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.lmlday.Location = new System.Drawing.Point(564, 424);
+            this.lmlday.Location = new System.Drawing.Point(564, 392);
             this.lmlday.Name = "lmlday";
             this.lmlday.Size = new System.Drawing.Size(112, 28);
             this.lmlday.TabIndex = 91;
@@ -172,7 +172,7 @@ namespace Member3
             // 
             this.lmlfrom.AutoSize = true;
             this.lmlfrom.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.lmlfrom.Location = new System.Drawing.Point(564, 458);
+            this.lmlfrom.Location = new System.Drawing.Point(564, 426);
             this.lmlfrom.Name = "lmlfrom";
             this.lmlfrom.Size = new System.Drawing.Size(122, 28);
             this.lmlfrom.TabIndex = 90;
@@ -182,7 +182,7 @@ namespace Member3
             // 
             this.lmlto.AutoSize = true;
             this.lmlto.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.lmlto.Location = new System.Drawing.Point(564, 494);
+            this.lmlto.Location = new System.Drawing.Point(564, 462);
             this.lmlto.Name = "lmlto";
             this.lmlto.Size = new System.Drawing.Size(34, 28);
             this.lmlto.TabIndex = 89;
@@ -192,7 +192,7 @@ namespace Member3
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.label12.Location = new System.Drawing.Point(85, 401);
+            this.label12.Location = new System.Drawing.Point(85, 369);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(162, 28);
             this.label12.TabIndex = 88;
@@ -202,7 +202,7 @@ namespace Member3
             // 
             this.bmlupdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(66)))), ((int)(((byte)(119)))));
             this.bmlupdate.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.bmlupdate.Location = new System.Drawing.Point(800, 243);
+            this.bmlupdate.Location = new System.Drawing.Point(800, 211);
             this.bmlupdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bmlupdate.Name = "bmlupdate";
             this.bmlupdate.Size = new System.Drawing.Size(120, 32);
@@ -215,7 +215,7 @@ namespace Member3
             // 
             this.bmlclear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(11)))), ((int)(((byte)(7)))));
             this.bmlclear.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.bmlclear.Location = new System.Drawing.Point(800, 301);
+            this.bmlclear.Location = new System.Drawing.Point(800, 269);
             this.bmlclear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bmlclear.Name = "bmlclear";
             this.bmlclear.Size = new System.Drawing.Size(120, 34);
@@ -227,7 +227,7 @@ namespace Member3
             // tmlrank
             // 
             this.tmlrank.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
-            this.tmlrank.Location = new System.Drawing.Point(564, 354);
+            this.tmlrank.Location = new System.Drawing.Point(564, 322);
             this.tmlrank.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tmlrank.Name = "tmlrank";
             this.tmlrank.Size = new System.Drawing.Size(164, 22);
@@ -243,7 +243,7 @@ namespace Member3
             "Engineering Building",
             "Management Building",
             "Main Building"});
-            this.cmlbuilding.Location = new System.Drawing.Point(564, 280);
+            this.cmlbuilding.Location = new System.Drawing.Point(564, 248);
             this.cmlbuilding.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmlbuilding.Name = "cmlbuilding";
             this.cmlbuilding.Size = new System.Drawing.Size(164, 24);
@@ -261,7 +261,7 @@ namespace Member3
             "4",
             "5",
             "6"});
-            this.cmllevel.Location = new System.Drawing.Point(564, 318);
+            this.cmllevel.Location = new System.Drawing.Point(564, 286);
             this.cmllevel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmllevel.Name = "cmllevel";
             this.cmllevel.Size = new System.Drawing.Size(164, 24);
@@ -271,7 +271,7 @@ namespace Member3
             // 
             this.lmlrank.AutoSize = true;
             this.lmlrank.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.lmlrank.Location = new System.Drawing.Point(440, 350);
+            this.lmlrank.Location = new System.Drawing.Point(440, 318);
             this.lmlrank.Name = "lmlrank";
             this.lmlrank.Size = new System.Drawing.Size(59, 28);
             this.lmlrank.TabIndex = 82;
@@ -281,7 +281,7 @@ namespace Member3
             // 
             this.lmllevel.AutoSize = true;
             this.lmllevel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.lmllevel.Location = new System.Drawing.Point(440, 318);
+            this.lmllevel.Location = new System.Drawing.Point(440, 286);
             this.lmllevel.Name = "lmllevel";
             this.lmllevel.Size = new System.Drawing.Size(61, 28);
             this.lmllevel.TabIndex = 81;
@@ -291,7 +291,7 @@ namespace Member3
             // 
             this.lmlbuilding.AutoSize = true;
             this.lmlbuilding.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.lmlbuilding.Location = new System.Drawing.Point(440, 277);
+            this.lmlbuilding.Location = new System.Drawing.Point(440, 245);
             this.lmlbuilding.Name = "lmlbuilding";
             this.lmlbuilding.Size = new System.Drawing.Size(91, 28);
             this.lmlbuilding.TabIndex = 80;
@@ -307,7 +307,7 @@ namespace Member3
             "Matara",
             "Kandy",
             "Jaffna"});
-            this.cmlcenter.Location = new System.Drawing.Point(564, 243);
+            this.cmlcenter.Location = new System.Drawing.Point(564, 211);
             this.cmlcenter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmlcenter.Name = "cmlcenter";
             this.cmlcenter.Size = new System.Drawing.Size(164, 24);
@@ -317,7 +317,7 @@ namespace Member3
             // 
             this.lmlcenter.AutoSize = true;
             this.lmlcenter.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.lmlcenter.Location = new System.Drawing.Point(440, 240);
+            this.lmlcenter.Location = new System.Drawing.Point(440, 208);
             this.lmlcenter.Name = "lmlcenter";
             this.lmlcenter.Size = new System.Drawing.Size(74, 28);
             this.lmlcenter.TabIndex = 78;
@@ -334,7 +334,7 @@ namespace Member3
             "Computer System Engineering",
             "Business Managment",
             "Quantity Surveying"});
-            this.cmldepartment.Location = new System.Drawing.Point(255, 350);
+            this.cmldepartment.Location = new System.Drawing.Point(255, 318);
             this.cmldepartment.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmldepartment.Name = "cmldepartment";
             this.cmldepartment.Size = new System.Drawing.Size(161, 24);
@@ -349,7 +349,7 @@ namespace Member3
             "Computing",
             "Engineering",
             "Management"});
-            this.cmlfaculty.Location = new System.Drawing.Point(255, 318);
+            this.cmlfaculty.Location = new System.Drawing.Point(255, 286);
             this.cmlfaculty.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmlfaculty.Name = "cmlfaculty";
             this.cmlfaculty.Size = new System.Drawing.Size(161, 24);
@@ -358,7 +358,7 @@ namespace Member3
             // tmlid
             // 
             this.tmlid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
-            this.tmlid.Location = new System.Drawing.Point(255, 277);
+            this.tmlid.Location = new System.Drawing.Point(255, 245);
             this.tmlid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tmlid.Name = "tmlid";
             this.tmlid.Size = new System.Drawing.Size(161, 22);
@@ -369,7 +369,7 @@ namespace Member3
             // 
             this.lmldepartment.AutoSize = true;
             this.lmldepartment.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.lmldepartment.Location = new System.Drawing.Point(85, 350);
+            this.lmldepartment.Location = new System.Drawing.Point(85, 318);
             this.lmldepartment.Name = "lmldepartment";
             this.lmldepartment.Size = new System.Drawing.Size(127, 28);
             this.lmldepartment.TabIndex = 74;
@@ -379,7 +379,7 @@ namespace Member3
             // 
             this.lmlfaculty.AutoSize = true;
             this.lmlfaculty.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.lmlfaculty.Location = new System.Drawing.Point(85, 315);
+            this.lmlfaculty.Location = new System.Drawing.Point(85, 283);
             this.lmlfaculty.Name = "lmlfaculty";
             this.lmlfaculty.Size = new System.Drawing.Size(79, 28);
             this.lmlfaculty.TabIndex = 73;
@@ -389,7 +389,7 @@ namespace Member3
             // 
             this.lmlid.AutoSize = true;
             this.lmlid.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.lmlid.Location = new System.Drawing.Point(85, 277);
+            this.lmlid.Location = new System.Drawing.Point(85, 245);
             this.lmlid.Name = "lmlid";
             this.lmlid.Size = new System.Drawing.Size(131, 28);
             this.lmlid.TabIndex = 72;
@@ -398,7 +398,7 @@ namespace Member3
             // tmlname
             // 
             this.tmlname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
-            this.tmlname.Location = new System.Drawing.Point(255, 240);
+            this.tmlname.Location = new System.Drawing.Point(255, 208);
             this.tmlname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tmlname.Name = "tmlname";
             this.tmlname.Size = new System.Drawing.Size(161, 22);
@@ -408,7 +408,7 @@ namespace Member3
             // 
             this.lmlname.AutoSize = true;
             this.lmlname.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.lmlname.Location = new System.Drawing.Point(85, 237);
+            this.lmlname.Location = new System.Drawing.Point(85, 205);
             this.lmlname.Name = "lmlname";
             this.lmlname.Size = new System.Drawing.Size(152, 28);
             this.lmlname.TabIndex = 70;
@@ -418,7 +418,7 @@ namespace Member3
             // 
             this.gridmanagelectrer.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
             this.gridmanagelectrer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridmanagelectrer.Location = new System.Drawing.Point(85, 49);
+            this.gridmanagelectrer.Location = new System.Drawing.Point(85, 17);
             this.gridmanagelectrer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gridmanagelectrer.Name = "gridmanagelectrer";
             this.gridmanagelectrer.RowHeadersWidth = 51;
@@ -429,7 +429,8 @@ namespace Member3
             // 
             // pictureBox11
             // 
-            this.pictureBox11.Location = new System.Drawing.Point(781, 361);
+            this.pictureBox11.Image = global::Member3.Properties.Resources._01161aaa0b6d1345dd8fe4e481144d84;
+            this.pictureBox11.Location = new System.Drawing.Point(760, 329);
             this.pictureBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(33, 25);

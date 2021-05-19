@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
-using System.Data;
+
 using System.Data.SqlClient;
 
 namespace Member3
@@ -28,19 +28,7 @@ namespace Member3
         private Form activeForm = null;
         private void TableLoad()
         {
-            //SqlConnection con = new SqlConnection(myconstring);
-            //SqlCommand cmd = new SqlCommand("SELECT LecturerName,EmployeeID,Department,Center,Faculty,Building,LecturerLevel,Rank FROM AddLecturer", con);
-            //DataTable dt = new DataTable();
-
-            //con.Open();
-
-            //SqlDataReader sdr = cmd.ExecuteReader();
-            //dt.Load(sdr);
-            //con.Close();
-
-            //dataGridView2.DataSource = dt;
-
-
+            
             SqlConnection con = new SqlConnection(myconstring);
             string sql = "select LecturerName,EmployeeID,Department,Center,Faculty,Building,LecturerLevel,Rank from AddLecturer";
             SqlCommand cmd = new SqlCommand(sql, con);
@@ -137,6 +125,7 @@ namespace Member3
 
             }
             TableLoad();
+            EditTableHousLoad();
         }
         private void Delete()
         {
@@ -154,6 +143,24 @@ namespace Member3
             else
             {
                 MessageBox.Show("Please click the Edit button before deleting  !");
+            }
+        }
+        private void DeleteHours()
+        {
+            SqlConnection con = new SqlConnection(myconstring);
+            string sql = " delete from AddHours WHERE SelectDay = '" + cmlday.Text + "'";
+            con.Open();
+            SqlCommand cmd = new SqlCommand(sql, con);
+            int rows = cmd.ExecuteNonQuery();
+            if (rows > 0)
+            {
+                MessageBox.Show("Deleted");
+                con.Close();
+                TableLoad();
+            }
+            else
+            {
+                MessageBox.Show("Please click the edit button !");
             }
         }
 
@@ -244,8 +251,47 @@ namespace Member3
             //Bind the fetched data to gridview
             dataGridView2.DataSource = dt;
 
-        }
+            DataGridViewButtonColumn editbutton = new DataGridViewButtonColumn();
 
+            editbutton.FlatStyle = FlatStyle.Popup;
+
+            editbutton.HeaderText = "Edit";
+            editbutton.Name = "Edit";
+            editbutton.UseColumnTextForButtonValue = true;
+            editbutton.Text = "Edit";
+
+            editbutton.Width = 60;
+
+            if (dataGridView2.Columns.Contains(editbutton.Name = "Edit"))
+            {
+
+            }
+            else
+            {
+                dataGridView2.Columns.Add(editbutton);
+            }
+            DataGridViewButtonColumn deletebutton = new DataGridViewButtonColumn();
+
+            deletebutton.FlatStyle = FlatStyle.Popup;
+
+            deletebutton.HeaderText = "Delete";
+            deletebutton.Name = "Delete";
+            deletebutton.UseColumnTextForButtonValue = true;
+            deletebutton.Text = "Delete";
+
+            deletebutton.Width = 60;
+
+            if (dataGridView2.Columns.Contains(deletebutton.Name = "Delete"))
+            {
+
+            }
+            else
+            {
+                dataGridView2.Columns.Add(deletebutton);
+            }
+
+
+        }
         private void tmlid_TextChanged(object sender, EventArgs e)
         {
             if (System.Text.RegularExpressions.Regex.IsMatch(tmlid.Text, "[^0-9]"))
@@ -262,6 +308,21 @@ namespace Member3
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.ColumnIndex == 0)
+            {
+
+                cmlday.Text = dataGridView2.Rows[e.RowIndex].Cells[2].Value.ToString();
+                cmlfrom.Text = dataGridView2.Rows[e.RowIndex].Cells[3].Value.ToString();
+                cmlto.Text = dataGridView2.Rows[e.RowIndex].Cells[4].Value.ToString();
+
+
+            }
+            else if (e.ColumnIndex == 1)
+            {
+
+                DeleteHours();
+
+            }
             EditTableHousLoad();
         }
 

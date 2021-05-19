@@ -190,7 +190,8 @@ namespace Member3
 
         private void btnaddsession_Click(object sender, EventArgs e)
         {
-            
+            FormSessionTab frmst = new FormSessionTab(); 
+            frmst.Show();
         }
 
         private void btnupdateclear_Click(object sender, EventArgs e)

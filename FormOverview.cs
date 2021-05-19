@@ -105,5 +105,10 @@ namespace Member3
             contentForm.BringToFront();
             contentForm.Show();
         }
+
+        private void panelContentForm_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

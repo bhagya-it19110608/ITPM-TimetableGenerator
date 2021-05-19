@@ -169,6 +169,12 @@
     <Compile Include="FormManageStudentUnavailableTime.Designer.cs">
       <DependentUpon>FormManageStudentUnavailableTime.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormManageSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManageSubject.Designer.cs">
+      <DependentUpon>FormManageSubject.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormManageTags.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -285,6 +291,9 @@
     <EmbeddedResource Include="FormManageStudentUnavailableTime.resx">
       <DependentUpon>FormManageStudentUnavailableTime.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormManageSubject.resx">
+      <DependentUpon>FormManageSubject.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormManageTags.resx">
       <DependentUpon>FormManageTags.cs</DependentUpon>
     </EmbeddedResource>
@@ -367,6 +376,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\refresh btn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01161aaa0b6d1345dd8fe4e481144d84.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

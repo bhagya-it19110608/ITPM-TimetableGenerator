@@ -124,6 +124,7 @@ namespace Member3
             this.buttonAddLecturer.TabIndex = 0;
             this.buttonAddLecturer.Text = "Add Lecturer";
             this.buttonAddLecturer.UseVisualStyleBackColor = false;
+            this.buttonAddLecturer.Click += new System.EventHandler(this.buttonAddLecturer_Click);
             // 
             // panelLecturer
             // 

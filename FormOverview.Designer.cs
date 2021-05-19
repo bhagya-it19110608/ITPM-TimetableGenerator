@@ -345,6 +345,7 @@ namespace Member3
             this.panelContentForm.Name = "panelContentForm";
             this.panelContentForm.Size = new System.Drawing.Size(715, 1055);
             this.panelContentForm.TabIndex = 1;
+            this.panelContentForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContentForm_Paint);
             // 
             // pictureBox1
             // 
