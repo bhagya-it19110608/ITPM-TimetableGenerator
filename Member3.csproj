@@ -85,6 +85,12 @@
     <Compile Include="FormContentStudent.Designer.cs">
       <DependentUpon>FormContentStudent.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormContentSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContentSubject.Designer.cs">
+      <DependentUpon>FormContentSubject.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormContentWorkingDaysAndHours.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +121,12 @@
     <Compile Include="FormManageDuration.Designer.cs">
       <DependentUpon>FormManageDuration.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormManageLecturer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManageLecturer.Designer.cs">
+      <DependentUpon>FormManageLecturer.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormManageLecturerNonOverlapping.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +150,12 @@
     </Compile>
     <Compile Include="FormManageLocationUnavailableTime.Designer.cs">
       <DependentUpon>FormManageLocationUnavailableTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormManageSessionLecturer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManageSessionLecturer.Designer.cs">
+      <DependentUpon>FormManageSessionLecturer.cs</DependentUpon>
     </Compile>
     <Compile Include="FormManageStudentGroups.cs">
       <SubType>Form</SubType>
@@ -169,6 +187,12 @@
     <Compile Include="FormOverview.Designer.cs">
       <DependentUpon>FormOverview.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormSessionAddSessionExtend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSessionAddSessionExtend.Designer.cs">
+      <DependentUpon>FormSessionAddSessionExtend.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormSessionExtend.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,6 +204,12 @@
     </Compile>
     <Compile Include="FormSessionExtendForLocation.Designer.cs">
       <DependentUpon>FormSessionExtendForLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSessionTab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSessionTab.Designer.cs">
+      <DependentUpon>FormSessionTab.cs</DependentUpon>
     </Compile>
     <Compile Include="FormStudentAddSession.cs">
       <SubType>Form</SubType>
@@ -213,6 +243,9 @@
     <EmbeddedResource Include="FormContentStudent.resx">
       <DependentUpon>FormContentStudent.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormContentSubject.resx">
+      <DependentUpon>FormContentSubject.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormContentWorkingDaysAndHours.resx">
       <DependentUpon>FormContentWorkingDaysAndHours.cs</DependentUpon>
     </EmbeddedResource>
@@ -228,6 +261,9 @@
     <EmbeddedResource Include="FormManageDuration.resx">
       <DependentUpon>FormManageDuration.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormManageLecturer.resx">
+      <DependentUpon>FormManageLecturer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormManageLecturerNonOverlapping.resx">
       <DependentUpon>FormManageLecturerNonOverlapping.cs</DependentUpon>
     </EmbeddedResource>
@@ -239,6 +275,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormManageLocationUnavailableTime.resx">
       <DependentUpon>FormManageLocationUnavailableTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormManageSessionLecturer.resx">
+      <DependentUpon>FormManageSessionLecturer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormManageStudentGroups.resx">
       <DependentUpon>FormManageStudentGroups.cs</DependentUpon>
@@ -255,11 +294,17 @@
     <EmbeddedResource Include="FormOverview.resx">
       <DependentUpon>FormOverview.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormSessionAddSessionExtend.resx">
+      <DependentUpon>FormSessionAddSessionExtend.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormSessionExtend.resx">
       <DependentUpon>FormSessionExtend.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSessionExtendForLocation.resx">
       <DependentUpon>FormSessionExtendForLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSessionTab.resx">
+      <DependentUpon>FormSessionTab.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormStudentAddSession.resx">
       <DependentUpon>FormStudentAddSession.cs</DependentUpon>

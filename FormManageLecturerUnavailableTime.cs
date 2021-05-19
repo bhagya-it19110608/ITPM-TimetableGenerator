@@ -49,8 +49,10 @@ namespace Member3
 
         private void buttonManageStudentTimeAllocation_Click(object sender, EventArgs e)
         {
+            buttonManageLecTimeAllocation.BackColor= Color.FromArgb(132, 136, 152);
             if (((Control)sender).BackColor != Color.FromArgb(53, 66, 119))
                 ((Control)sender).BackColor = Color.FromArgb(53, 66, 119);
+
             else
                 ((Control)sender).BackColor = Color.FromArgb(132, 136, 152);
             openContentUnavailableTime(new FormManageStudentUnavailableTime());
@@ -108,11 +110,12 @@ namespace Member3
                 if (NATA_LEC > 0)
                 {
 
-                    SqlCommand cmd = new SqlCommand("UPDATE UnavailableLecturer SET LecturerName = @LecturerName,Group = @Group,SubGroup = @SubGroup,SessionID =  @SessionID,Time =  @Time WHERE NATA_LEC = @ID", con);
+                    SqlCommand cmd = new SqlCommand("UPDATE UnavailableLecturer SET LecturerName = @LecturerName,LGroup = @LGroup,SubGroup = @SubGroup,SessionID =  @SessionID,Time =  @Time WHERE NATA_LEC = @ID", con);
+                    //SqlCommand cmd = new SqlCommand("UPDATE UnavailableLecturer SET LecturerName = '"+ comboBoxManageLecturerSelectLecturer.Text + "',Group ='"+comboBoxManageLecturerSelectGroup.Text + "',SubGroup = '" +comboBoxManageLecturerSelectSubGroup.Text+ "',SessionID = '"+ comboBoxManageLecturerSelectSessionID.Text+"',Time =  '"+comboBoxManageLecturerSelectTime.Text+"' WHERE NATA_LEC = '"+this.NATA_LEC+"'", con);
 
                     cmd.CommandType = CommandType.Text;
                     cmd.Parameters.AddWithValue("@LecturerName", comboBoxManageLecturerSelectLecturer.Text);
-                    cmd.Parameters.AddWithValue("@Group", comboBoxManageLecturerSelectGroup.Text);
+                    cmd.Parameters.AddWithValue("@LGroup", comboBoxManageLecturerSelectGroup.Text);
                     cmd.Parameters.AddWithValue("@SubGroup", comboBoxManageLecturerSelectSubGroup.Text);
                     cmd.Parameters.AddWithValue("@SessionID", comboBoxManageLecturerSelectSessionID.Text);
                     cmd.Parameters.AddWithValue("@Time", comboBoxManageLecturerSelectTime.Text);
@@ -249,6 +252,11 @@ namespace Member3
             }
 
 
+        }
+
+        private void buttonManageLecturerSearchRefresh_Click(object sender, EventArgs e)
+        {
+            GetUnavailableLecturerRecord();
         }
     }
     

@@ -35,8 +35,8 @@ namespace Member3
             this.buttonSessionManageSession = new System.Windows.Forms.Button();
             this.buttonSessionAddSession = new System.Windows.Forms.Button();
             this.panelSession = new System.Windows.Forms.Panel();
-            this.panelLecturerContent = new System.Windows.Forms.Panel();
             this.panelContentSession = new System.Windows.Forms.Panel();
+            this.panelLecturerContent = new System.Windows.Forms.Panel();
             this.panelSessionHeader.SuspendLayout();
             this.panelSession.SuspendLayout();
             this.panelLecturerContent.SuspendLayout();
@@ -80,6 +80,7 @@ namespace Member3
             this.buttonSessionManageSession.TabIndex = 1;
             this.buttonSessionManageSession.Text = "Manage Session";
             this.buttonSessionManageSession.UseVisualStyleBackColor = false;
+            this.buttonSessionManageSession.Click += new System.EventHandler(this.buttonSessionManageSession_Click);
             // 
             // buttonSessionAddSession
             // 
@@ -93,6 +94,7 @@ namespace Member3
             this.buttonSessionAddSession.TabIndex = 0;
             this.buttonSessionAddSession.Text = "Add Session";
             this.buttonSessionAddSession.UseVisualStyleBackColor = false;
+            this.buttonSessionAddSession.Click += new System.EventHandler(this.buttonSessionAddSession_Click);
             // 
             // panelSession
             // 
@@ -104,6 +106,14 @@ namespace Member3
             this.panelSession.Size = new System.Drawing.Size(1509, 1008);
             this.panelSession.TabIndex = 2;
             // 
+            // panelContentSession
+            // 
+            this.panelContentSession.BackColor = System.Drawing.Color.White;
+            this.panelContentSession.Location = new System.Drawing.Point(89, 107);
+            this.panelContentSession.Name = "panelContentSession";
+            this.panelContentSession.Size = new System.Drawing.Size(1286, 601);
+            this.panelContentSession.TabIndex = 1;
+            // 
             // panelLecturerContent
             // 
             this.panelLecturerContent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(147)))), ((int)(((byte)(164)))));
@@ -113,14 +123,6 @@ namespace Member3
             this.panelLecturerContent.Name = "panelLecturerContent";
             this.panelLecturerContent.Size = new System.Drawing.Size(1509, 1008);
             this.panelLecturerContent.TabIndex = 3;
-            // 
-            // panelContentSession
-            // 
-            this.panelContentSession.BackColor = System.Drawing.Color.White;
-            this.panelContentSession.Location = new System.Drawing.Point(89, 107);
-            this.panelContentSession.Name = "panelContentSession";
-            this.panelContentSession.Size = new System.Drawing.Size(1286, 601);
-            this.panelContentSession.TabIndex = 1;
             // 
             // FormContentSession
             // 

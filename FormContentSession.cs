@@ -43,5 +43,26 @@ namespace Member3
 
             openContentSession(new FormSessionExtend());
         }
+
+        private void buttonSessionAddSession_Click(object sender, EventArgs e)
+        {
+            if (((Control)sender).BackColor != Color.FromArgb(132, 136, 152))
+                ((Control)sender).BackColor = Color.FromArgb(132, 136, 152);
+            else
+                ((Control)sender).BackColor = Color.FromArgb(143, 147, 164);
+            
+            openContentSession(new FormSessionTab());
+        }
+
+        private void buttonSessionManageSession_Click(object sender, EventArgs e)
+        {
+            if (((Control)sender).BackColor != Color.FromArgb(132, 136, 152))
+                ((Control)sender).BackColor = Color.FromArgb(132, 136, 152);
+            else
+                ((Control)sender).BackColor = Color.FromArgb(143, 147, 164);
+
+            openContentSession(new FormManageSessionLecturer());
+
+        }
     }
 }

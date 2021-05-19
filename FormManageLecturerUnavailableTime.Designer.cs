@@ -327,6 +327,7 @@ namespace Member3
             this.buttonManageLecturerSearchRefresh.Size = new System.Drawing.Size(31, 27);
             this.buttonManageLecturerSearchRefresh.TabIndex = 8;
             this.buttonManageLecturerSearchRefresh.UseVisualStyleBackColor = false;
+            this.buttonManageLecturerSearchRefresh.Click += new System.EventHandler(this.buttonManageLecturerSearchRefresh_Click);
             // 
             // buttonManageLecturerTimeSearch
             // 
