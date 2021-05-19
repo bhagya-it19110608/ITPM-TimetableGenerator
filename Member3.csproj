@@ -109,6 +109,12 @@
     <Compile Include="FormLecturerUnavailable.Designer.cs">
       <DependentUpon>FormLecturerUnavailable.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLocationManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLocationManage.Designer.cs">
+      <DependentUpon>FormLocationManage.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLocationUnavailable.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -260,6 +266,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormLecturerUnavailable.resx">
       <DependentUpon>FormLecturerUnavailable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLocationManage.resx">
+      <DependentUpon>FormLocationManage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLocationUnavailable.resx">
       <DependentUpon>FormLocationUnavailable.cs</DependentUpon>
