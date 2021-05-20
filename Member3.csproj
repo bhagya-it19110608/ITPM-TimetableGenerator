@@ -173,6 +173,12 @@
     <Compile Include="FormManageLecturerUnavailableTime.Designer.cs">
       <DependentUpon>FormManageLecturerUnavailableTime.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormManageLocationSession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManageLocationSession.Designer.cs">
+      <DependentUpon>FormManageLocationSession.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormManageLocationUnavailableTime.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -332,6 +338,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormManageLecturerUnavailableTime.resx">
       <DependentUpon>FormManageLecturerUnavailableTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormManageLocationSession.resx">
+      <DependentUpon>FormManageLocationSession.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormManageLocationUnavailableTime.resx">
       <DependentUpon>FormManageLocationUnavailableTime.cs</DependentUpon>

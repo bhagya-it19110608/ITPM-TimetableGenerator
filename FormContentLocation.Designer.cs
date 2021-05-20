@@ -37,7 +37,6 @@ namespace Member3
             this.buttonAddLocation = new System.Windows.Forms.Button();
             this.panelLocation = new System.Windows.Forms.Panel();
             this.panelContentLocation = new System.Windows.Forms.Panel();
-            this.panelLecturerContent = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
@@ -49,11 +48,12 @@ namespace Member3
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.panelLecturerContent = new System.Windows.Forms.Panel();
             this.panelLocationHeader.SuspendLayout();
             this.panelLocation.SuspendLayout();
             this.panelContentLocation.SuspendLayout();
-            this.panelLecturerContent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Cap)).BeginInit();
+            this.panelLecturerContent.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelLocationHeader
@@ -95,6 +95,7 @@ namespace Member3
             this.buttonManageSession.TabIndex = 2;
             this.buttonManageSession.Text = "Manage Session";
             this.buttonManageSession.UseVisualStyleBackColor = false;
+            this.buttonManageSession.Click += new System.EventHandler(this.buttonManageSession_Click);
             // 
             // buttonManageLocation
             // 
@@ -151,16 +152,6 @@ namespace Member3
             this.panelContentLocation.Name = "panelContentLocation";
             this.panelContentLocation.Size = new System.Drawing.Size(1286, 601);
             this.panelContentLocation.TabIndex = 1;
-            // 
-            // panelLecturerContent
-            // 
-            this.panelLecturerContent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(147)))), ((int)(((byte)(164)))));
-            this.panelLecturerContent.Controls.Add(this.panelLocation);
-            this.panelLecturerContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelLecturerContent.Location = new System.Drawing.Point(0, 0);
-            this.panelLecturerContent.Name = "panelLecturerContent";
-            this.panelLecturerContent.Size = new System.Drawing.Size(1509, 1008);
-            this.panelLecturerContent.TabIndex = 3;
             // 
             // button2
             // 
@@ -284,6 +275,16 @@ namespace Member3
             this.label1.TabIndex = 15;
             this.label1.Text = "Building Name";
             // 
+            // panelLecturerContent
+            // 
+            this.panelLecturerContent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(147)))), ((int)(((byte)(164)))));
+            this.panelLecturerContent.Controls.Add(this.panelLocation);
+            this.panelLecturerContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelLecturerContent.Location = new System.Drawing.Point(0, 0);
+            this.panelLecturerContent.Name = "panelLecturerContent";
+            this.panelLecturerContent.Size = new System.Drawing.Size(1509, 1008);
+            this.panelLecturerContent.TabIndex = 3;
+            // 
             // FormContentLocation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -300,8 +301,8 @@ namespace Member3
             this.panelLocation.ResumeLayout(false);
             this.panelContentLocation.ResumeLayout(false);
             this.panelContentLocation.PerformLayout();
-            this.panelLecturerContent.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Cap)).EndInit();
+            this.panelLecturerContent.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

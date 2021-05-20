@@ -139,5 +139,14 @@ namespace Member3
             openContentLocation(new FormLocationManage());
             
         }
+
+        private void buttonManageSession_Click(object sender, EventArgs e)
+        {
+            if (((Control)sender).BackColor != Color.FromArgb(132, 136, 152))
+                ((Control)sender).BackColor = Color.FromArgb(132, 136, 152);
+            else
+                ((Control)sender).BackColor = Color.FromArgb(143, 147, 164);
+            openContentLocation(new FormManageLocationSession());
+        }
     }
 }
