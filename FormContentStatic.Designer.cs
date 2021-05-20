@@ -117,7 +117,7 @@ namespace Member3
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(341, 59);
+            this.chart1.Location = new System.Drawing.Point(491, 36);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
@@ -132,6 +132,7 @@ namespace Member3
             this.chart1.Size = new System.Drawing.Size(740, 440);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
+            this.chart1.Click += new System.EventHandler(this.chart1_Click);
             // 
             // buttonLoad
             // 
@@ -184,11 +185,11 @@ namespace Member3
             this.lecturerHallDataGridViewTextBoxColumn,
             this.labsDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.mydbBindingSource3;
-            this.dataGridView1.Location = new System.Drawing.Point(43, 53);
+            this.dataGridView1.Location = new System.Drawing.Point(24, 53);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(255, 358);
+            this.dataGridView1.Size = new System.Drawing.Size(476, 161);
             this.dataGridView1.TabIndex = 33;
             // 
             // _automated_timetableDataSet2

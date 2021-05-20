@@ -35,7 +35,6 @@ namespace Member3
             this.buttonManageStudentSearchRefresh = new System.Windows.Forms.Button();
             this.buttonManageStudentTimeSearch = new System.Windows.Forms.Button();
             this.comboBoxManageStudentTime = new System.Windows.Forms.ComboBox();
-            this.textBoxSearchManageStudentTime = new System.Windows.Forms.TextBox();
             this.comboBoxManageStudentSelectTime = new System.Windows.Forms.ComboBox();
             this.comboBoxManageStudentSelectSessionID = new System.Windows.Forms.ComboBox();
             this.comboBoxManageStudentSelectSubGroup = new System.Windows.Forms.ComboBox();
@@ -76,6 +75,7 @@ namespace Member3
             this.dataGridViewManageStudentUnavailableTime.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewManageStudentUnavailableTime.Size = new System.Drawing.Size(799, 187);
             this.dataGridViewManageStudentUnavailableTime.TabIndex = 22;
+            this.dataGridViewManageStudentUnavailableTime.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewManageStudentUnavailableTime_CellClick);
             // 
             // buttonManageStudentSearchRefresh
             // 
@@ -90,6 +90,7 @@ namespace Member3
             this.buttonManageStudentSearchRefresh.Size = new System.Drawing.Size(31, 27);
             this.buttonManageStudentSearchRefresh.TabIndex = 21;
             this.buttonManageStudentSearchRefresh.UseVisualStyleBackColor = false;
+            this.buttonManageStudentSearchRefresh.Click += new System.EventHandler(this.buttonManageStudentSearchRefresh_Click);
             // 
             // buttonManageStudentTimeSearch
             // 
@@ -104,6 +105,7 @@ namespace Member3
             this.buttonManageStudentTimeSearch.TabIndex = 20;
             this.buttonManageStudentTimeSearch.Text = "Search";
             this.buttonManageStudentTimeSearch.UseVisualStyleBackColor = false;
+            this.buttonManageStudentTimeSearch.Click += new System.EventHandler(this.buttonManageStudentTimeSearch_Click);
             // 
             // comboBoxManageStudentTime
             // 
@@ -113,16 +115,6 @@ namespace Member3
             this.comboBoxManageStudentTime.Name = "comboBoxManageStudentTime";
             this.comboBoxManageStudentTime.Size = new System.Drawing.Size(140, 24);
             this.comboBoxManageStudentTime.TabIndex = 19;
-            // 
-            // textBoxSearchManageStudentTime
-            // 
-            this.textBoxSearchManageStudentTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
-            this.textBoxSearchManageStudentTime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxSearchManageStudentTime.Location = new System.Drawing.Point(268, 16);
-            this.textBoxSearchManageStudentTime.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBoxSearchManageStudentTime.Name = "textBoxSearchManageStudentTime";
-            this.textBoxSearchManageStudentTime.Size = new System.Drawing.Size(113, 22);
-            this.textBoxSearchManageStudentTime.TabIndex = 18;
             // 
             // comboBoxManageStudentSelectTime
             // 
@@ -223,12 +215,13 @@ namespace Member3
             this.buttonManageStudentTimeDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonManageStudentTimeDelete.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.buttonManageStudentTimeDelete.ForeColor = System.Drawing.Color.White;
-            this.buttonManageStudentTimeDelete.Location = new System.Drawing.Point(467, 452);
+            this.buttonManageStudentTimeDelete.Location = new System.Drawing.Point(948, 131);
             this.buttonManageStudentTimeDelete.Name = "buttonManageStudentTimeDelete";
             this.buttonManageStudentTimeDelete.Size = new System.Drawing.Size(125, 42);
             this.buttonManageStudentTimeDelete.TabIndex = 38;
             this.buttonManageStudentTimeDelete.Text = "Delete";
             this.buttonManageStudentTimeDelete.UseVisualStyleBackColor = false;
+            this.buttonManageStudentTimeDelete.Click += new System.EventHandler(this.buttonManageStudentTimeDelete_Click);
             // 
             // buttonManageStudentTimeUpdate
             // 
@@ -237,12 +230,13 @@ namespace Member3
             this.buttonManageStudentTimeUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonManageStudentTimeUpdate.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.buttonManageStudentTimeUpdate.ForeColor = System.Drawing.Color.White;
-            this.buttonManageStudentTimeUpdate.Location = new System.Drawing.Point(305, 452);
+            this.buttonManageStudentTimeUpdate.Location = new System.Drawing.Point(948, 59);
             this.buttonManageStudentTimeUpdate.Name = "buttonManageStudentTimeUpdate";
             this.buttonManageStudentTimeUpdate.Size = new System.Drawing.Size(125, 42);
             this.buttonManageStudentTimeUpdate.TabIndex = 37;
             this.buttonManageStudentTimeUpdate.Text = "Update";
             this.buttonManageStudentTimeUpdate.UseVisualStyleBackColor = false;
+            this.buttonManageStudentTimeUpdate.Click += new System.EventHandler(this.buttonManageStudentTimeUpdate_Click);
             // 
             // buttonManageStudentTimeClear
             // 
@@ -251,12 +245,13 @@ namespace Member3
             this.buttonManageStudentTimeClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonManageStudentTimeClear.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.buttonManageStudentTimeClear.ForeColor = System.Drawing.Color.White;
-            this.buttonManageStudentTimeClear.Location = new System.Drawing.Point(629, 452);
+            this.buttonManageStudentTimeClear.Location = new System.Drawing.Point(948, 204);
             this.buttonManageStudentTimeClear.Name = "buttonManageStudentTimeClear";
             this.buttonManageStudentTimeClear.Size = new System.Drawing.Size(125, 42);
             this.buttonManageStudentTimeClear.TabIndex = 36;
             this.buttonManageStudentTimeClear.Text = "Clear";
             this.buttonManageStudentTimeClear.UseVisualStyleBackColor = false;
+            this.buttonManageStudentTimeClear.Click += new System.EventHandler(this.buttonManageStudentTimeClear_Click);
             // 
             // FormManageStudentUnavailableTime
             // 
@@ -280,10 +275,10 @@ namespace Member3
             this.Controls.Add(this.buttonManageStudentSearchRefresh);
             this.Controls.Add(this.buttonManageStudentTimeSearch);
             this.Controls.Add(this.comboBoxManageStudentTime);
-            this.Controls.Add(this.textBoxSearchManageStudentTime);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormManageStudentUnavailableTime";
             this.Text = "FormManageStudentUnavailableTime";
+            this.Load += new System.EventHandler(this.FormManageStudentUnavailableTime_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewManageStudentUnavailableTime)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -297,7 +292,6 @@ namespace Member3
         private System.Windows.Forms.Button buttonManageStudentSearchRefresh;
         private System.Windows.Forms.Button buttonManageStudentTimeSearch;
         private System.Windows.Forms.ComboBox comboBoxManageStudentTime;
-        private System.Windows.Forms.TextBox textBoxSearchManageStudentTime;
         private System.Windows.Forms.ComboBox comboBoxManageStudentSelectTime;
         private System.Windows.Forms.ComboBox comboBoxManageStudentSelectSessionID;
         private System.Windows.Forms.ComboBox comboBoxManageStudentSelectSubGroup;

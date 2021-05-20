@@ -257,6 +257,7 @@ namespace Member3
         private void buttonManageLecturerSearchRefresh_Click(object sender, EventArgs e)
         {
             GetUnavailableLecturerRecord();
+            LoadDropDown();
         }
     }
     

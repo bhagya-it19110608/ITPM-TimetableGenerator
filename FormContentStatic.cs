@@ -35,5 +35,10 @@ namespace Member3
             this.mydbTableAdapter3.Fill(this._automated_timetableDataSet3.mydb);
            
         }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
