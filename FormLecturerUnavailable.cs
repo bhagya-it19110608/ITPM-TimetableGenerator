@@ -13,12 +13,13 @@ namespace Member3
 {
     public partial class FormLecturerUnavailable : Form
     {
+        
+
         public FormLecturerUnavailable()
         {
             InitializeComponent();
         }
         SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-BLNS6C85\SQLEXPRESS;Initial Catalog=automated-timetable;Integrated Security=True");
-
         private void buttonLecturerTimeSubmit_Click(object sender, EventArgs e)
         {
             if (IsValid())
@@ -83,7 +84,12 @@ namespace Member3
 
         private void ClearFormControls()
         {
-            
+            comboBoxLecturerSelectLecturer.SelectedIndex = -1;
+            comboBoxLecturerSelectGroup.SelectedIndex = -1;
+            comboBoxLecturerSelectSubGroup.SelectedIndex = -1;
+            comboBoxLecturerSelectSessionID.SelectedIndex = -1;
+            comboBoxLecturerSelectTime.SelectedIndex = -1;
+
             comboBoxLecturerSelectLecturer.Focus();
         }
     }

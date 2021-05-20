@@ -135,6 +135,11 @@ namespace Member3
         {
             NATA_STU = 0;
 
+            comboBoxManageStudentSelectGroup.SelectedIndex = -1;
+            comboBoxManageStudentSelectSubGroup.SelectedIndex = -1;
+            comboBoxManageStudentSelectSessionID.SelectedIndex = -1;
+            comboBoxManageStudentSelectTime.SelectedIndex = -1;
+
             comboBoxManageStudentSelectGroup.Focus();
         }
 

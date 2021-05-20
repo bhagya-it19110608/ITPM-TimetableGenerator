@@ -202,7 +202,7 @@ namespace Member3
             }
             else
             {
-                MessageBox.Show("Please check the Employee id ");
+                MessageBox.Show("Employee ID should be contain six digits!! ");
             }
             TableLoad();
         }

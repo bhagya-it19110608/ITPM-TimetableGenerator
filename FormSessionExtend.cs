@@ -17,6 +17,7 @@ namespace Member3
         {
             InitializeComponent();
         }
+        //FormAddNotAvailableTimeOfLecturer frmNATL = new FormAddNotAvailableTimeOfLecturer();
         SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-BLNS6C85\SQLEXPRESS;Initial Catalog=automated-timetable;Integrated Security=True");
         int id, id2;
 
@@ -64,7 +65,7 @@ namespace Member3
 
         private void btnAddCon_Click(object sender, EventArgs e)
         {
-
+            //frmNATL.Show();
         }
 
         private void FormSessionExtend_Load_1(object sender, EventArgs e)
@@ -168,7 +169,11 @@ namespace Member3
                 MessageBox.Show("Please select the row to delete", "selet?", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-    
+
+        private void btnAdd1_Click(object sender, EventArgs e)
+        {
+            //frmNATL.Show();
+        }
 
         private void buttonSessionNonOverlapping_Click(object sender, EventArgs e)
         {

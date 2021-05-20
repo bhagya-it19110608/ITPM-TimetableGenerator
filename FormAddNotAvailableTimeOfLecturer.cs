@@ -19,7 +19,7 @@ namespace Member3
         }
         SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-BLNS6C85\SQLEXPRESS;Initial Catalog=automated-timetable;Integrated Security=True");
 
-
+        FormSessionExtend frmSE = new FormSessionExtend();
         private Form activeForm = null;
 
         private void openContentLecturerContent(Form contentLecturerContent)
@@ -119,6 +119,11 @@ namespace Member3
                 ((Control)sender).ForeColor = Color.FromArgb(0, 0, 0);
 
             openContentLecturerContent(new FormLecturerNonOverlapping());
+        }
+
+        private void btnView_Click(object sender, EventArgs e)
+        {
+            frmSE.Show();
         }
     }
 }

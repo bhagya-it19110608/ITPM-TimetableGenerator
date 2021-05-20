@@ -75,8 +75,16 @@ namespace Member3
         }
         private void ClearFormControls()
         {
-
+            comboBoxStudentSelectGroup.SelectedIndex = -1;
+            comboBoxStudentSelectSubGroup.SelectedIndex = -1;
+            comboBoxStudentSelectSessionID.SelectedIndex = -1;
+            comboBoxStudentSelectTime.SelectedIndex = -1;
             comboBoxStudentSelectGroup.Focus();
+        }
+
+        private void buttonStudentTimeView_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

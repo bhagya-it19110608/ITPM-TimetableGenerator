@@ -30,7 +30,6 @@ namespace Member3
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormStudentAddSession));
-            this.buttonStudentTimeView = new System.Windows.Forms.Button();
             this.buttonStudentTimeSubmit = new System.Windows.Forms.Button();
             this.buttonStudentTimeClear = new System.Windows.Forms.Button();
             this.comboBoxStudentSelectTime = new System.Windows.Forms.ComboBox();
@@ -44,26 +43,13 @@ namespace Member3
             this.labelStudentNotAvailableTimeAllocation = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // buttonStudentTimeView
-            // 
-            this.buttonStudentTimeView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(66)))), ((int)(((byte)(119)))));
-            this.buttonStudentTimeView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonStudentTimeView.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonStudentTimeView.ForeColor = System.Drawing.Color.White;
-            this.buttonStudentTimeView.Location = new System.Drawing.Point(809, 306);
-            this.buttonStudentTimeView.Name = "buttonStudentTimeView";
-            this.buttonStudentTimeView.Size = new System.Drawing.Size(133, 45);
-            this.buttonStudentTimeView.TabIndex = 37;
-            this.buttonStudentTimeView.Text = "View";
-            this.buttonStudentTimeView.UseVisualStyleBackColor = false;
-            // 
             // buttonStudentTimeSubmit
             // 
             this.buttonStudentTimeSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(66)))), ((int)(((byte)(119)))));
             this.buttonStudentTimeSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonStudentTimeSubmit.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonStudentTimeSubmit.ForeColor = System.Drawing.Color.White;
-            this.buttonStudentTimeSubmit.Location = new System.Drawing.Point(809, 196);
+            this.buttonStudentTimeSubmit.Location = new System.Drawing.Point(809, 252);
             this.buttonStudentTimeSubmit.Name = "buttonStudentTimeSubmit";
             this.buttonStudentTimeSubmit.Size = new System.Drawing.Size(133, 45);
             this.buttonStudentTimeSubmit.TabIndex = 36;
@@ -77,7 +63,7 @@ namespace Member3
             this.buttonStudentTimeClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonStudentTimeClear.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonStudentTimeClear.ForeColor = System.Drawing.Color.White;
-            this.buttonStudentTimeClear.Location = new System.Drawing.Point(809, 251);
+            this.buttonStudentTimeClear.Location = new System.Drawing.Point(809, 307);
             this.buttonStudentTimeClear.Name = "buttonStudentTimeClear";
             this.buttonStudentTimeClear.Size = new System.Drawing.Size(133, 45);
             this.buttonStudentTimeClear.TabIndex = 35;
@@ -103,9 +89,28 @@ namespace Member3
             this.comboBoxStudentSelectSessionID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
             this.comboBoxStudentSelectSessionID.FormattingEnabled = true;
             this.comboBoxStudentSelectSessionID.Items.AddRange(new object[] {
-            "Session1",
-            "Session2",
-            "Session3"});
+            "Communication Skills - IT1040",
+            "Introduction to Computer Systems - IT1020",
+            "Introduction to Programming - IT1010",
+            "Mathematics for Computing - IT1030",
+            "Engineering Mathematics - IE1010",
+            "English for Academic Purpose - IT1080",
+            "Infromation System & Data Modeling - IT1090",
+            "Network Fundamentals - IE1020",
+            "Object Oriented Concepts - IT1050",
+            "Internet & Web Technology - IT1100",
+            "Software Process Modeling - IT1060",
+            "Computer Networks - IT2050",
+            "Database Management Systems - IT2040",
+            "Object Oriented Programming - IT2030",
+            "Operating Systems and System Administration - IT2060",
+            "Software Engineering - IT2020",
+            "Data Structures & Algorithms - IT2070",
+            "Employability Skills Development - IT2100",
+            "Information Technology Project - IT2080",
+            "Mobile Application Development - IT2010",
+            "Probability & Statistics - IT2110",
+            "Professional Skills - IT2090"});
             this.comboBoxStudentSelectSessionID.Location = new System.Drawing.Point(510, 274);
             this.comboBoxStudentSelectSessionID.Name = "comboBoxStudentSelectSessionID";
             this.comboBoxStudentSelectSessionID.Size = new System.Drawing.Size(237, 24);
@@ -194,7 +199,6 @@ namespace Member3
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1093, 586);
             this.Controls.Add(this.labelStudentNotAvailableTimeAllocation);
-            this.Controls.Add(this.buttonStudentTimeView);
             this.Controls.Add(this.buttonStudentTimeSubmit);
             this.Controls.Add(this.buttonStudentTimeClear);
             this.Controls.Add(this.comboBoxStudentSelectTime);
@@ -214,8 +218,6 @@ namespace Member3
         }
 
         #endregion
-
-        private System.Windows.Forms.Button buttonStudentTimeView;
         private System.Windows.Forms.Button buttonStudentTimeSubmit;
         private System.Windows.Forms.Button buttonStudentTimeClear;
         private System.Windows.Forms.ComboBox comboBoxStudentSelectTime;

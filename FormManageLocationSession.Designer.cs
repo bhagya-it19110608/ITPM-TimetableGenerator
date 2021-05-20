@@ -260,9 +260,28 @@ namespace Member3
             this.comboBoxSession.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
             this.comboBoxSession.FormattingEnabled = true;
             this.comboBoxSession.Items.AddRange(new object[] {
-            "Session1",
-            "Session2",
-            "Session3"});
+            "Communication Skills - IT1040",
+            "Introduction to Computer Systems - IT1020",
+            "Introduction to Programming - IT1010",
+            "Mathematics for Computing - IT1030",
+            "Engineering Mathematics - IE1010",
+            "English for Academic Purpose - IT1080",
+            "Infromation System & Data Modeling - IT1090",
+            "Network Fundamentals - IE1020",
+            "Object Oriented Concepts - IT1050",
+            "Internet & Web Technology - IT1100",
+            "Software Process Modeling - IT1060",
+            "Computer Networks - IT2050",
+            "Database Management Systems - IT2040",
+            "Object Oriented Programming - IT2030",
+            "Operating Systems and System Administration - IT2060",
+            "Software Engineering - IT2020",
+            "Data Structures & Algorithms - IT2070",
+            "Employability Skills Development - IT2100",
+            "Information Technology Project - IT2080",
+            "Mobile Application Development - IT2010",
+            "Probability & Statistics - IT2110",
+            "Professional Skills - IT2090"});
             this.comboBoxSession.Location = new System.Drawing.Point(310, 448);
             this.comboBoxSession.Name = "comboBoxSession";
             this.comboBoxSession.Size = new System.Drawing.Size(156, 24);

@@ -76,6 +76,10 @@ namespace Member3
         }
         private void ClearFormControls()
         {
+            comboBoxLocationSelectRoom.SelectedIndex = -1;
+            comboBoxLocationSelectedDay.SelectedIndex = -1;
+            comboBoxLocationStartTime.SelectedIndex = -1;
+            comboBoxLocationEndTime.SelectedIndex = -1;
 
             comboBoxLocationSelectRoom.Focus();
         }

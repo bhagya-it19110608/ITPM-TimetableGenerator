@@ -191,7 +191,7 @@ namespace Member3
             }
             else
             {
-                MessageBox.Show("Please check the Employee id ");
+                MessageBox.Show("Please click edit button in grid view before update!  ");
             }
         }
         public void ManageUpdate()

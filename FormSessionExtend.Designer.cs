@@ -31,9 +31,6 @@ namespace Member3
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSessionExtend));
             this.panelContentSessionContent = new System.Windows.Forms.Panel();
-            this.buttonSessionNotAvailableTimes = new System.Windows.Forms.Button();
-            this.buttonSessionNonOverlapping = new System.Windows.Forms.Button();
-            this.buttonSessionConsecutive = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btndelete12 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -45,6 +42,9 @@ namespace Member3
             this.btnsearch = new System.Windows.Forms.Button();
             this.txtsearch1 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.buttonSessionNotAvailableTimes = new System.Windows.Forms.Button();
+            this.buttonSessionNonOverlapping = new System.Windows.Forms.Button();
+            this.buttonSessionConsecutive = new System.Windows.Forms.Button();
             this.panelContentSessionContent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -67,50 +67,6 @@ namespace Member3
             this.panelContentSessionContent.Name = "panelContentSessionContent";
             this.panelContentSessionContent.Size = new System.Drawing.Size(1142, 487);
             this.panelContentSessionContent.TabIndex = 8;
-            // 
-            // buttonSessionNotAvailableTimes
-            // 
-            this.buttonSessionNotAvailableTimes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
-            this.buttonSessionNotAvailableTimes.FlatAppearance.BorderSize = 0;
-            this.buttonSessionNotAvailableTimes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSessionNotAvailableTimes.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSessionNotAvailableTimes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(168)))), ((int)(((byte)(167)))));
-            this.buttonSessionNotAvailableTimes.Location = new System.Drawing.Point(433, 1);
-            this.buttonSessionNotAvailableTimes.Name = "buttonSessionNotAvailableTimes";
-            this.buttonSessionNotAvailableTimes.Size = new System.Drawing.Size(200, 47);
-            this.buttonSessionNotAvailableTimes.TabIndex = 7;
-            this.buttonSessionNotAvailableTimes.Text = "Not Avaiable Times";
-            this.buttonSessionNotAvailableTimes.UseVisualStyleBackColor = false;
-            this.buttonSessionNotAvailableTimes.Click += new System.EventHandler(this.buttonSessionNotAvailableTimes_Click);
-            // 
-            // buttonSessionNonOverlapping
-            // 
-            this.buttonSessionNonOverlapping.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
-            this.buttonSessionNonOverlapping.FlatAppearance.BorderSize = 0;
-            this.buttonSessionNonOverlapping.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSessionNonOverlapping.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSessionNonOverlapping.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(168)))), ((int)(((byte)(167)))));
-            this.buttonSessionNonOverlapping.Location = new System.Drawing.Point(217, 1);
-            this.buttonSessionNonOverlapping.Name = "buttonSessionNonOverlapping";
-            this.buttonSessionNonOverlapping.Size = new System.Drawing.Size(200, 47);
-            this.buttonSessionNonOverlapping.TabIndex = 6;
-            this.buttonSessionNonOverlapping.Text = "Non Overlapping";
-            this.buttonSessionNonOverlapping.UseVisualStyleBackColor = false;
-            this.buttonSessionNonOverlapping.Click += new System.EventHandler(this.buttonSessionNonOverlapping_Click);
-            // 
-            // buttonSessionConsecutive
-            // 
-            this.buttonSessionConsecutive.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
-            this.buttonSessionConsecutive.FlatAppearance.BorderSize = 0;
-            this.buttonSessionConsecutive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSessionConsecutive.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSessionConsecutive.ForeColor = System.Drawing.Color.Black;
-            this.buttonSessionConsecutive.Location = new System.Drawing.Point(0, 1);
-            this.buttonSessionConsecutive.Name = "buttonSessionConsecutive";
-            this.buttonSessionConsecutive.Size = new System.Drawing.Size(200, 47);
-            this.buttonSessionConsecutive.TabIndex = 5;
-            this.buttonSessionConsecutive.Text = "Consecutive";
-            this.buttonSessionConsecutive.UseVisualStyleBackColor = false;
             // 
             // comboBox1
             // 
@@ -195,6 +151,7 @@ namespace Member3
             this.btnAdd1.TabIndex = 26;
             this.btnAdd1.Text = "ADD SESSION";
             this.btnAdd1.UseVisualStyleBackColor = false;
+            this.btnAdd1.Click += new System.EventHandler(this.btnAdd1_Click);
             // 
             // btnRefresh1
             // 
@@ -240,6 +197,50 @@ namespace Member3
             this.dataGridView1.Size = new System.Drawing.Size(864, 185);
             this.dataGridView1.TabIndex = 22;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            // 
+            // buttonSessionNotAvailableTimes
+            // 
+            this.buttonSessionNotAvailableTimes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
+            this.buttonSessionNotAvailableTimes.FlatAppearance.BorderSize = 0;
+            this.buttonSessionNotAvailableTimes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSessionNotAvailableTimes.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSessionNotAvailableTimes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(168)))), ((int)(((byte)(167)))));
+            this.buttonSessionNotAvailableTimes.Location = new System.Drawing.Point(433, 1);
+            this.buttonSessionNotAvailableTimes.Name = "buttonSessionNotAvailableTimes";
+            this.buttonSessionNotAvailableTimes.Size = new System.Drawing.Size(200, 47);
+            this.buttonSessionNotAvailableTimes.TabIndex = 7;
+            this.buttonSessionNotAvailableTimes.Text = "Not Avaiable Times";
+            this.buttonSessionNotAvailableTimes.UseVisualStyleBackColor = false;
+            this.buttonSessionNotAvailableTimes.Click += new System.EventHandler(this.buttonSessionNotAvailableTimes_Click);
+            // 
+            // buttonSessionNonOverlapping
+            // 
+            this.buttonSessionNonOverlapping.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
+            this.buttonSessionNonOverlapping.FlatAppearance.BorderSize = 0;
+            this.buttonSessionNonOverlapping.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSessionNonOverlapping.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSessionNonOverlapping.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(168)))), ((int)(((byte)(167)))));
+            this.buttonSessionNonOverlapping.Location = new System.Drawing.Point(217, 1);
+            this.buttonSessionNonOverlapping.Name = "buttonSessionNonOverlapping";
+            this.buttonSessionNonOverlapping.Size = new System.Drawing.Size(200, 47);
+            this.buttonSessionNonOverlapping.TabIndex = 6;
+            this.buttonSessionNonOverlapping.Text = "Non Overlapping";
+            this.buttonSessionNonOverlapping.UseVisualStyleBackColor = false;
+            this.buttonSessionNonOverlapping.Click += new System.EventHandler(this.buttonSessionNonOverlapping_Click);
+            // 
+            // buttonSessionConsecutive
+            // 
+            this.buttonSessionConsecutive.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
+            this.buttonSessionConsecutive.FlatAppearance.BorderSize = 0;
+            this.buttonSessionConsecutive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSessionConsecutive.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSessionConsecutive.ForeColor = System.Drawing.Color.Black;
+            this.buttonSessionConsecutive.Location = new System.Drawing.Point(0, 1);
+            this.buttonSessionConsecutive.Name = "buttonSessionConsecutive";
+            this.buttonSessionConsecutive.Size = new System.Drawing.Size(200, 47);
+            this.buttonSessionConsecutive.TabIndex = 5;
+            this.buttonSessionConsecutive.Text = "Consecutive";
+            this.buttonSessionConsecutive.UseVisualStyleBackColor = false;
             // 
             // FormSessionExtend
             // 

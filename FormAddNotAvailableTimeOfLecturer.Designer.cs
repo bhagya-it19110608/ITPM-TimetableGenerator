@@ -115,6 +115,7 @@ namespace Member3
             this.btnView.TabIndex = 23;
             this.btnView.Text = "VIEW";
             this.btnView.UseVisualStyleBackColor = false;
+            this.btnView.Click += new System.EventHandler(this.btnView_Click);
             // 
             // btnAddCon
             // 

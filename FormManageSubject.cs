@@ -117,7 +117,7 @@ namespace Member3
 
             else
             {
-                MessageBox.Show("Please click the Edit option before delete !");
+                MessageBox.Show("Please click the Edit option in grid view before update !");
             }
 
             /*SqlConnection con = new SqlConnection(myconstring);
@@ -197,7 +197,7 @@ namespace Member3
             }
             else
             {
-                MessageBox.Show("Please check the Subject Code !");
+                MessageBox.Show("Please click the edit button before delete!");
             }
         }
 

@@ -110,6 +110,11 @@ namespace Member3
         }
         private void ClearFormControls()
         {
+            comboBoxLecturer.SelectedIndex = -1;
+            comboBoxRoom.SelectedIndex = -1;
+            comboBoxSubject.SelectedIndex = -1;
+            comboBoxSession.SelectedIndex = -1;
+            comboBoxTag.SelectedIndex = -1;
 
             comboBoxLecturer.Focus();
         }

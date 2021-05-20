@@ -281,12 +281,28 @@ namespace Member3
             this.name.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.name.FormattingEnabled = true;
             this.name.Items.AddRange(new object[] {
-            "Computer Network",
-            "Database System",
-            "IT Project",
-            "Propobility & Stastics",
-            "Software Engineering",
-            "Object Oriented Programming"});
+            "Communication Skills - IT1040",
+            "Introduction to Computer Systems - IT1020",
+            "Introduction to Programming - IT1010",
+            "Mathematics for Computing - IT1030",
+            "Engineering Mathematics - IE1010",
+            "English for Academic Purpose - IT1080",
+            "Infromation System & Data Modeling - IT1090",
+            "Network Fundamentals - IE1020",
+            "Object Oriented Concepts - IT1050",
+            "Internet & Web Technology - IT1100",
+            "Software Process Modeling - IT1060",
+            "Computer Networks - IT2050",
+            "Database Management Systems - IT2040",
+            "Object Oriented Programming - IT2030",
+            "Operating Systems and System Administration - IT2060",
+            "Software Engineering - IT2020",
+            "Data Structures & Algorithms - IT2070",
+            "Employability Skills Development - IT2100",
+            "Information Technology Project - IT2080",
+            "Mobile Application Development - IT2010",
+            "Probability & Statistics - IT2110",
+            "Professional Skills - IT2090"});
             this.name.Location = new System.Drawing.Point(362, 235);
             this.name.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.name.Name = "name";

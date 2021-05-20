@@ -42,7 +42,6 @@ namespace Member3
             this.comboBoxLecturerSelectTime = new System.Windows.Forms.ComboBox();
             this.buttonLecturerTimeClear = new System.Windows.Forms.Button();
             this.buttonLecturerTimeSubmit = new System.Windows.Forms.Button();
-            this.buttonLecturerTimeView = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelLecturerSelectLecturer
@@ -139,9 +138,28 @@ namespace Member3
             this.comboBoxLecturerSelectSessionID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
             this.comboBoxLecturerSelectSessionID.FormattingEnabled = true;
             this.comboBoxLecturerSelectSessionID.Items.AddRange(new object[] {
-            "Session1",
-            "Session2",
-            "Session3"});
+            "Communication Skills - IT1040",
+            "Introduction to Computer Systems - IT1020",
+            "Introduction to Programming - IT1010",
+            "Mathematics for Computing - IT1030",
+            "Engineering Mathematics - IE1010",
+            "English for Academic Purpose - IT1080",
+            "Infromation System & Data Modeling - IT1090",
+            "Network Fundamentals - IE1020",
+            "Object Oriented Concepts - IT1050",
+            "Internet & Web Technology - IT1100",
+            "Software Process Modeling - IT1060",
+            "Computer Networks - IT2050",
+            "Database Management Systems - IT2040",
+            "Object Oriented Programming - IT2030",
+            "Operating Systems and System Administration - IT2060",
+            "Software Engineering - IT2020",
+            "Data Structures & Algorithms - IT2070",
+            "Employability Skills Development - IT2100",
+            "Information Technology Project - IT2080",
+            "Mobile Application Development - IT2010",
+            "Probability & Statistics - IT2110",
+            "Professional Skills - IT2090"});
             this.comboBoxLecturerSelectSessionID.Location = new System.Drawing.Point(512, 242);
             this.comboBoxLecturerSelectSessionID.Name = "comboBoxLecturerSelectSessionID";
             this.comboBoxLecturerSelectSessionID.Size = new System.Drawing.Size(237, 24);
@@ -166,7 +184,7 @@ namespace Member3
             this.buttonLecturerTimeClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLecturerTimeClear.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLecturerTimeClear.ForeColor = System.Drawing.Color.White;
-            this.buttonLecturerTimeClear.Location = new System.Drawing.Point(482, 391);
+            this.buttonLecturerTimeClear.Location = new System.Drawing.Point(616, 391);
             this.buttonLecturerTimeClear.Name = "buttonLecturerTimeClear";
             this.buttonLecturerTimeClear.Size = new System.Drawing.Size(133, 45);
             this.buttonLecturerTimeClear.TabIndex = 21;
@@ -180,7 +198,7 @@ namespace Member3
             this.buttonLecturerTimeSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLecturerTimeSubmit.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLecturerTimeSubmit.ForeColor = System.Drawing.Color.White;
-            this.buttonLecturerTimeSubmit.Location = new System.Drawing.Point(304, 391);
+            this.buttonLecturerTimeSubmit.Location = new System.Drawing.Point(446, 391);
             this.buttonLecturerTimeSubmit.Name = "buttonLecturerTimeSubmit";
             this.buttonLecturerTimeSubmit.Size = new System.Drawing.Size(133, 45);
             this.buttonLecturerTimeSubmit.TabIndex = 23;
@@ -188,26 +206,12 @@ namespace Member3
             this.buttonLecturerTimeSubmit.UseVisualStyleBackColor = false;
             this.buttonLecturerTimeSubmit.Click += new System.EventHandler(this.buttonLecturerTimeSubmit_Click);
             // 
-            // buttonLecturerTimeView
-            // 
-            this.buttonLecturerTimeView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(66)))), ((int)(((byte)(119)))));
-            this.buttonLecturerTimeView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLecturerTimeView.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLecturerTimeView.ForeColor = System.Drawing.Color.White;
-            this.buttonLecturerTimeView.Location = new System.Drawing.Point(660, 391);
-            this.buttonLecturerTimeView.Name = "buttonLecturerTimeView";
-            this.buttonLecturerTimeView.Size = new System.Drawing.Size(133, 45);
-            this.buttonLecturerTimeView.TabIndex = 24;
-            this.buttonLecturerTimeView.Text = "View";
-            this.buttonLecturerTimeView.UseVisualStyleBackColor = false;
-            // 
             // FormLecturerUnavailable
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1093, 586);
-            this.Controls.Add(this.buttonLecturerTimeView);
             this.Controls.Add(this.buttonLecturerTimeSubmit);
             this.Controls.Add(this.buttonLecturerTimeClear);
             this.Controls.Add(this.comboBoxLecturerSelectTime);
@@ -242,6 +246,5 @@ namespace Member3
         private System.Windows.Forms.ComboBox comboBoxLecturerSelectTime;
         private System.Windows.Forms.Button buttonLecturerTimeClear;
         private System.Windows.Forms.Button buttonLecturerTimeSubmit;
-        private System.Windows.Forms.Button buttonLecturerTimeView;
     }
 }

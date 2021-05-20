@@ -182,6 +182,11 @@ namespace Member3
         private void ClearFormControls()
         {
             NATA_LEC = 0;
+            comboBoxManageLecturerSelectLecturer.SelectedIndex = -1;
+            comboBoxManageLecturerSelectGroup.SelectedIndex = -1;
+            comboBoxManageLecturerSelectSubGroup.SelectedIndex = -1;
+            comboBoxManageLecturerSelectSessionID.SelectedIndex = -1;
+            comboBoxManageLecturerSelectTime.SelectedIndex = -1;
             
             comboBoxManageLecturerSelectLecturer.Focus();
         }

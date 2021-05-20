@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
-using System.Data;
 using System.Data.SqlClient;
 
 namespace Member3
@@ -111,7 +110,7 @@ namespace Member3
 
             else
             {
-                MessageBox.Show("Lecturer Name cannot be updated. !");
+                MessageBox.Show("Lecturer Name cannot be updated or please click edit button before update. !");
             }
         }
         public void Clearupdate()
